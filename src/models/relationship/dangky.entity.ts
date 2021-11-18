@@ -1,0 +1,26 @@
+import { Lophoc } from './../lophoc/lophoc.entity';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  JoinColumn,
+  ManyToMany,
+  ManyToOne,
+  PrimaryColumn,
+  UpdateDateColumn,
+} from 'typeorm';
+import { Hocvien } from '../hocvien/hocvien.entity';
+
+@Entity()
+export class Dangky {
+  @ManyToOne((type) => Lophoc, { primary: true })
+  @JoinColumn()
+  lophoc: Lophoc;
+
+  @ManyToOne((type) => Hocvien, { primary: true })
+  @JoinColumn()
+  hocvien: Hocvien;
+
+  @Column()
+  Ngaydangky: Date;
+}
