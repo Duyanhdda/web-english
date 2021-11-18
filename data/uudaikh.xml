@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">Uudai</Data></Cell>
+			<Cell><Data ss:Type="String">khoahocMaKH</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">Miễn phí 2 tháng Nextflix</Data></Cell>
+			<Cell><Data ss:Type="String">KN001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ tài liệu độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">KN002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ tài liệu độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">KN004</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT004</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT005</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT006</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bộ đề ôn thi độc quyền</Data></Cell>
+			<Cell><Data ss:Type="String">OT007</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng 2 vé xem phim CGV</Data></Cell>
+			<Cell><Data ss:Type="String">TN001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Combo phim hoạt hình tiếng anh </Data></Cell>
+			<Cell><Data ss:Type="String">TNH001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng 2 vé đến khu vui chơi thiếu nhi</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Combo phim hoạt hình tiếng anh </Data></Cell>
+			<Cell><Data ss:Type="String">TNH002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng 2 vé đến khu vui chơi thiếu nhi</Data></Cell>
+			<Cell><Data ss:Type="String">TNH002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng 2 bộ đồng phục hè</Data></Cell>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng 2 vé đến khu vui chơi thiếu nhi</Data></Cell>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tặng ly sứ lưu niệm</Data></Cell>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

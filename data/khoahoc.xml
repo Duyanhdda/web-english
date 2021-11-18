@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">MaKH</Data></Cell>
+			<Cell><Data ss:Type="String">Ten</Data></Cell>
+			<Cell><Data ss:Type="String">Hocphi</Data></Cell>
+			<Cell><Data ss:Type="String">Noidung</Data></Cell>
+			<Cell><Data ss:Type="String">Thoiluong</Data></Cell>
+			<Cell><Data ss:Type="String">Trangthai</Data></Cell>
+			<Cell><Data ss:Type="String">Gioihansiso</Data></Cell>
+			<Cell><Data ss:Type="String">Yeucautrinhdo</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">KN001</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Ứng Dụng English Hub</Data></Cell>
+			<Cell><Data ss:Type="Number">10000000</Data></Cell>
+			<Cell><Data ss:Type="String">Giá trị cốt lõi của English Hub là giáo trình cân bằng 4 kỹ năng Anh ngữ với kết quả học tập rõ ràng thông qua các bài học chủ đề thú vị và ngôn ngữ được trình bày bằng video đậm chất "giải trí".</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN002</Data></Cell>
+			<Cell><Data ss:Type="String">Tiếng Anh Kinh Doanh</Data></Cell>
+			<Cell><Data ss:Type="Number">7000000</Data></Cell>
+			<Cell><Data ss:Type="String">Thiết kế phù hợp với yêu cầu của lĩnh vực kinh doanh để người học giao tiếp Anh ngữ thật tự tin và chuyên nghiệp, hỗ trợ tốt nhất cho công việc.</Data></Cell>
+			<Cell><Data ss:Type="Number">10</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN003</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Giao Tiếp iTALK</Data></Cell>
+			<Cell><Data ss:Type="Number">8000000</Data></Cell>
+			<Cell><Data ss:Type="String">Mọi hoạt động trong từng buổi học thúc đẩy học viên luyện kỹ năng giao tiếp tự tin và hiệu quả ngay tại lớp
+
+</Data></Cell>
+			<Cell><Data ss:Type="Number">10</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN004</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Cấp Tốc Cho Người "Mất Gốc"</Data></Cell>
+			<Cell><Data ss:Type="Number">5000000</Data></Cell>
+			<Cell><Data ss:Type="String">Xây dựng nền tảng tiếng Anh, cải thiện 4 kỹ năng từ cơ bản đến nâng cao trong thời gian ngắn với hiệu quả tối ưu.</Data></Cell>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">10</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT001</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi IELTS 6.0</Data></Cell>
+			<Cell><Data ss:Type="Number">9000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT002</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi IELTS 6.5</Data></Cell>
+			<Cell><Data ss:Type="Number">10000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">closed</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT003</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi IELTS 7.0</Data></Cell>
+			<Cell><Data ss:Type="Number">10000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT004</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi IELTS 8.0</Data></Cell>
+			<Cell><Data ss:Type="Number">15000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">18</Data></Cell>
+			<Cell><Data ss:Type="String">closed</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT005</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi TOEIC 600</Data></Cell>
+			<Cell><Data ss:Type="Number">7000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT006</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi TOEIC 700</Data></Cell>
+			<Cell><Data ss:Type="Number">7500000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT007</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn Thi TOEIC 800</Data></Cell>
+			<Cell><Data ss:Type="Number">9000000</Data></Cell>
+			<Cell><Data ss:Type="String">Đề thi thử miễn phí, đội ngũ giảng viên chuyên môn cao và tận tình mang lại hiệu quả tốt nhất cho học viên.</Data></Cell>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">closed</Data></Cell>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TN001</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Thiếu Niên YOUNG LEADER</Data></Cell>
+			<Cell><Data ss:Type="Number">12000000</Data></Cell>
+			<Cell><Data ss:Type="String">Chương trình cho thiếu niên từ 11 đến 15 tuổi nhằm giúp học viên giao tiếp tiếng anh lưu loát, rèn luyện kỹ năng học tập, tự tin theo học chương trình tiếng anh ở bậc phổ thông cơ sở và đạt điểm cao trong các kỳ thi quốc tế.</Data></Cell>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">closed</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TNH001</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Mẫu Giáo SMARTKID</Data></Cell>
+			<Cell><Data ss:Type="Number">10000000</Data></Cell>
+			<Cell><Data ss:Type="String">Chương trình cho trẻ từ 4 đến 6 tuổi giúp tạo nền tảng anh ngữ vững chắc cho bé.</Data></Cell>
+			<Cell><Data ss:Type="Number">18</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TNH002</Data></Cell>
+			<Cell><Data ss:Type="String">Anh Ngữ Thiếu Nhi SUPERKID</Data></Cell>
+			<Cell><Data ss:Type="Number">10000000</Data></Cell>
+			<Cell><Data ss:Type="String">Hình thành và phát triển ngôn ngữ như bản năng kết hợp với bồi dưỡng cho chương trình tiếng anh trên lớp.</Data></Cell>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+			<Cell><Data ss:Type="String">Tiếng Anh Hè</Data></Cell>
+			<Cell><Data ss:Type="Number">5000000</Data></Cell>
+			<Cell><Data ss:Type="String">Với phương pháp học thông qua khám phá, cùng với sự hỗ trợ của công nghệ hiện đại, nội dung học đầy màu sắc và hoạt động thực hành đầy hứng khởi, con hiểu thêm về bản thân và mở khóa những vượt trội bên trong con.</Data></Cell>
+			<Cell><Data ss:Type="Number">9</Data></Cell>
+			<Cell><Data ss:Type="String">opening</Data></Cell>
+			<Cell><Data ss:Type="Number">30</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

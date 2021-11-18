@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">Ten</Data></Cell>
+			<Cell><Data ss:Type="String">Noidung</Data></Cell>
+			<Cell><Data ss:Type="String">khoahocMaKH</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">Lê Văn Đông</Data></Cell>
+			<Cell><Data ss:Type="String">Khóa học giúp tôi tự tin hơn trong giao tiếp hằng ngày, giúp tôi tiếp xúc với người nước ngoài không còn bị ấp úng.</Data></Cell>
+			<Cell><Data ss:Type="String">KN001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Lê Trần Hoàng Thịnh</Data></Cell>
+			<Cell><Data ss:Type="String">Sau khi học khóa học này, em thấy kỹ năng thuyết trình và nói trước đám đông khi dùng ngoại ngữ của mình được cải thiện nhiều. Các bạn hòa đồng và thầy cô cũng thân thiện.</Data></Cell>
+			<Cell><Data ss:Type="String">KN003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Đinh Gia Quang</Data></Cell>
+			<Cell><Data ss:Type="String">Ban đầu em gặp khó khăn trong việc nghe nói tiếng anh, nhờ có khóa học này mà em đã tự tin hơn nhiều</Data></Cell>
+			<Cell><Data ss:Type="String">KN004</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Nguyễn Phi Hùng</Data></Cell>
+			<Cell><Data ss:Type="String">Khóa học giúp em lấy lại căn bản môn tiếng anh, các thầy cô rất tận tình và giảng bài cũng dễ hiểu.</Data></Cell>
+			<Cell><Data ss:Type="String">KN004</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Lê Thanh Trúc</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn thi ở đây rất vui vì các thầy cô tạo được tinh thần thoải mái, kiên nhẫn giảng dạy những điểm tôi không hiểu. Tôi đã đạt kết quả cao hơn mong đợi.</Data></Cell>
+			<Cell><Data ss:Type="String">OT001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ngô Hoàng Giang</Data></Cell>
+			<Cell><Data ss:Type="String">Ôn thi ở đây rất hiệu quả, tôi đã đạt được mục tiêu mình đề ra trong thời gian ngắn, đã có đủ điều kiện anh văn để tốt nghiệp.</Data></Cell>
+			<Cell><Data ss:Type="String">OT005</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ngô Anh Đức</Data></Cell>
+			<Cell><Data ss:Type="String">Các thầy cô chỉ dạy rất kỹ, chương trình sát với đề thi thật nên ôn tập đạt hiệu quả cao.</Data></Cell>
+			<Cell><Data ss:Type="String">OT006</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Hoàng Văn Phi</Data></Cell>
+			<Cell><Data ss:Type="String">Khóa học này giúp cho con tôi có điểm số tốt hơn trên trường và tự tin hơn trong cuộc sống.</Data></Cell>
+			<Cell><Data ss:Type="String">TN001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Nguyễn Thanh Huyền</Data></Cell>
+			<Cell><Data ss:Type="String">Con tôi rất thích học khóa này, các thầy cô tận tình và dạy dễ hiểu nên bé tiếp thu nhanh.</Data></Cell>
+			<Cell><Data ss:Type="String">TNH002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ngô Thanh Vân</Data></Cell>
+			<Cell><Data ss:Type="String">Khóa học này giúp con tôi có một mùa hè vui vẻ và bổ ích, tránh được việc bé lướt web quá nhiều và giúp bé cải thiện khả năng giao tiếp bằng tiếng anh.</Data></Cell>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Nguyễn Bảo Ninh</Data></Cell>
+			<Cell><Data ss:Type="String">Tôi đã cho con học khóa học này và cảm thấy rất đúng đắn, con tôi đã có một mùa hè bổ ích.</Data></Cell>
+			<Cell><Data ss:Type="String">TNH003</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

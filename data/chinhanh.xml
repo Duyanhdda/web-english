@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">MaCN</Data></Cell>
+			<Cell><Data ss:Type="String">Ten</Data></Cell>
+			<Cell><Data ss:Type="String">Sonha</Data></Cell>
+			<Cell><Data ss:Type="String">Duong</Data></Cell>
+			<Cell><Data ss:Type="String">Quanhuyen</Data></Cell>
+			<Cell><Data ss:Type="String">Tinhtp</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">BD001</Data></Cell>
+			<Cell><Data ss:Type="String">T2E CMT8</Data></Cell>
+			<Cell><Data ss:Type="String">78</Data></Cell>
+			<Cell><Data ss:Type="String">Cách Mạng Tháng 8</Data></Cell>
+			<Cell><Data ss:Type="String">Thành phố Thủ Dầu 1</Data></Cell>
+			<Cell><Data ss:Type="String">Bình Dương</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">BD002</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Dĩ An</Data></Cell>
+			<Cell><Data ss:Type="String">22</Data></Cell>
+			<Cell><Data ss:Type="String">đường M</Data></Cell>
+			<Cell><Data ss:Type="String">thành phố Dĩ An</Data></Cell>
+			<Cell><Data ss:Type="String">Bình Dương</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">DN001</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Nguyễn Văn Linh</Data></Cell>
+			<Cell><Data ss:Type="String">99A</Data></Cell>
+			<Cell><Data ss:Type="String">Nguyễn Văn Linh</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Hải Châu</Data></Cell>
+			<Cell><Data ss:Type="String">Đà Nẵng</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM001</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Nguyễn Thị Minh Khai</Data></Cell>
+			<Cell><Data ss:Type="String">189</Data></Cell>
+			<Cell><Data ss:Type="String">Nguyễn Thị Minh Khai</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 1</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM002</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Võ Thị Sáu</Data></Cell>
+			<Cell><Data ss:Type="String">78</Data></Cell>
+			<Cell><Data ss:Type="String">Võ Thị Sáu</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 1</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM003</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Trần Não</Data></Cell>
+			<Cell><Data ss:Type="String">58B</Data></Cell>
+			<Cell><Data ss:Type="String">Trần Não</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 2</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM004</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Khánh Hội</Data></Cell>
+			<Cell><Data ss:Type="String">245</Data></Cell>
+			<Cell><Data ss:Type="String">Khánh Hội</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 4</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM005</Data></Cell>
+			<Cell><Data ss:Type="String">T2E An Dương Vương</Data></Cell>
+			<Cell><Data ss:Type="String">135</Data></Cell>
+			<Cell><Data ss:Type="String">An Dương Vương</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 5</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM006</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Bà Hom</Data></Cell>
+			<Cell><Data ss:Type="String">63</Data></Cell>
+			<Cell><Data ss:Type="String">Bà Hom</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 6</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM007</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Nguyễn Khắc Viện</Data></Cell>
+			<Cell><Data ss:Type="String">25</Data></Cell>
+			<Cell><Data ss:Type="String">Nguyễn Khắc Viện</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 7</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM008</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Xa Lộ Hà Nội</Data></Cell>
+			<Cell><Data ss:Type="String">76A</Data></Cell>
+			<Cell><Data ss:Type="String">Xa Lộ Hà Nội</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 9</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM009</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Nguyễn Chí Thanh</Data></Cell>
+			<Cell><Data ss:Type="String">282</Data></Cell>
+			<Cell><Data ss:Type="String">Nguyễn Chí Thanh</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 10</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM010</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Trường Chinh</Data></Cell>
+			<Cell><Data ss:Type="String">187</Data></Cell>
+			<Cell><Data ss:Type="String">Trường Chinh</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 12</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM011</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Tô Ký</Data></Cell>
+			<Cell><Data ss:Type="String">55</Data></Cell>
+			<Cell><Data ss:Type="String">Tô Ký</Data></Cell>
+			<Cell><Data ss:Type="String">Quận 12</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM012</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Cộng Hòa</Data></Cell>
+			<Cell><Data ss:Type="String">105</Data></Cell>
+			<Cell><Data ss:Type="String">Cộng Hòa</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Tân Bình</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM013</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Quang Trung </Data></Cell>
+			<Cell><Data ss:Type="String">651</Data></Cell>
+			<Cell><Data ss:Type="String">Quang Trung</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Gò Vấp</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM014</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Tô Ngọc Vân</Data></Cell>
+			<Cell><Data ss:Type="String">485</Data></Cell>
+			<Cell><Data ss:Type="String">Tô Ngọc Vân</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Thủ Đức</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HCM015</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Tô Ký 2</Data></Cell>
+			<Cell><Data ss:Type="String">30/13</Data></Cell>
+			<Cell><Data ss:Type="String">Tô Ký</Data></Cell>
+			<Cell><Data ss:Type="String">Huyện Hóc Môn</Data></Cell>
+			<Cell><Data ss:Type="String">HCM</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HN001</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Lê Văn Lương</Data></Cell>
+			<Cell><Data ss:Type="String">145</Data></Cell>
+			<Cell><Data ss:Type="String">Lê Văn Lương</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Thanh Xuân</Data></Cell>
+			<Cell><Data ss:Type="String">Hà Nội</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HN002</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Cầu Giấy</Data></Cell>
+			<Cell><Data ss:Type="String">299</Data></Cell>
+			<Cell><Data ss:Type="String">Cầu Giấy</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Cầu Giấy</Data></Cell>
+			<Cell><Data ss:Type="String">Hà Nội</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HN003</Data></Cell>
+			<Cell><Data ss:Type="String">T2E Nguyễn Lương Bằng</Data></Cell>
+			<Cell><Data ss:Type="String">187</Data></Cell>
+			<Cell><Data ss:Type="String">Nguyễn Lương Bằng</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Đống Đa</Data></Cell>
+			<Cell><Data ss:Type="String">Hà Nội</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HN004</Data></Cell>
+			<Cell><Data ss:Type="String">T2E TimeCity</Data></Cell>
+			<Cell><Data ss:Type="String">458</Data></Cell>
+			<Cell><Data ss:Type="String">Minh Khai</Data></Cell>
+			<Cell><Data ss:Type="String">Quận Hai Bà Trưng</Data></Cell>
+			<Cell><Data ss:Type="String">Hà Nội</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

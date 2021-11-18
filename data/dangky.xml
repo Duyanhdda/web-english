@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">Ngaydangky</Data></Cell>
+			<Cell><Data ss:Type="String">lophocMaLH</Data></Cell>
+			<Cell><Data ss:Type="String">hocvienMaHV</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-22 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1611314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-30 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1612224</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1810227</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1910666</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-30 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1912140</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">2016555</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-28 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">2111314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-24 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">1514226</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-20 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">1711314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-27 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">1712005</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-26 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">1820566</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-30 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">1912190</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-28 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1254741</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-24 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1312451</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-23 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1611000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-24 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1611204</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-28 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1845621</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-28 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1912123</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-22 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1912322</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-26 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1021000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-25 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1311004</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-26 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1514001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-22 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1514002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-25 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1623445</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-24 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1810333</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-25 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1911704</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-27 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">1915888</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">2012222</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-21 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1412667</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-26 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1623558</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-21 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1710512</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-21 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1811314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1910448</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-20 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1911314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-22 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1911837</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-20 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">1911900</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-26 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">2011314</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2021-09-29 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">2013666</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

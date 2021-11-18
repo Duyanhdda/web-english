@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">lophocMaLH</Data></Cell>
+			<Cell><Data ss:Type="String">quanlygiaoducNhanvien</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">KN001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">QL001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">QL001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN003_L03</Data></Cell>
+			<Cell><Data ss:Type="String">QL001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">KN004_L01</Data></Cell>
+			<Cell><Data ss:Type="String">QL001</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">QL002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">QL002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT002_L01</Data></Cell>
+			<Cell><Data ss:Type="String">QL002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">OT002_L02</Data></Cell>
+			<Cell><Data ss:Type="String">QL002</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TNH001_L01</Data></Cell>
+			<Cell><Data ss:Type="String">QL003</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TNH001_L02</Data></Cell>
+			<Cell><Data ss:Type="String">QL003</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
