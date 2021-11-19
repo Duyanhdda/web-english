@@ -3,7 +3,7 @@ use main1811;
 
 -- XEM KHOA HOC ---------------------------------------------------------------------------------------
 DELIMITER $$
-drop procedure if exists `DanhsachKhoaHoc`;
+-- drop procedure if exists `DanhsachKhoaHoc`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachKhoaHoc`()
 begin
   select *
@@ -13,7 +13,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `ThongTinChiTietKH_hientai`;
+-- drop procedure if exists `ThongTinChiTietKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `ThongTinChiTietKH_hientai`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.makh = makh)
@@ -29,7 +29,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `ThongTinChiTietKH_toanbo`;
+-- drop procedure if exists `ThongTinChiTietKH_toanbo`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `ThongTinChiTietKH_toanbo`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.makh = makh)
@@ -46,7 +46,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `HV_thongtinchitiet_KH`;
+-- drop procedure if exists `HV_thongtinchitiet_KH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `HV_thongtinchitiet_KH`(
     IN `maKH` VARCHAR(255))
 BEGIN
@@ -63,7 +63,7 @@ DELIMITER ;
 -- KHOA HOC 
 
 DELIMITER $$
-drop procedure if exists `DanhSachGVthuocKH_hientai`;
+-- drop procedure if exists `DanhSachGVthuocKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachGVthuocKH_hientai`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.makh = makh)
@@ -83,7 +83,7 @@ END$$
 DELIMITER ;
 
 DELIMITER $$
-drop procedure if exists `DanhSachGVthuocKH_toanbo`;
+-- drop procedure if exists `DanhSachGVthuocKH_toanbo`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachGVthuocKH_toanbo`(IN `maKH` VARCHAR(255))
 begin
   if exists (select * from khoahoc where khoahoc.makh = makh)
@@ -105,7 +105,7 @@ DELIMITER ;
 -- LOP HOC
 
 DELIMITER $$
-drop procedure if exists `DanhSachGVthuocLH`;
+-- drop procedure if exists `DanhSachGVthuocLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachGVthuocLH`(IN `maLH` VARCHAR(255))
 begin
   if exists (select * from lophoc where lophoc.maLH = maLH)
@@ -126,7 +126,7 @@ DELIMITER ;
 
 -- XEM TRO GIANG ---------------------------------------------------------------------------------------
 DELIMITER $$
-drop procedure if exists `DanhSachTGthuocKH_hientai`;
+-- drop procedure if exists `DanhSachTGthuocKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachTGthuocKH_hientai`(IN `maKH` VARCHAR(255))
 begin
   if exists (select * from khoahoc where khoahoc.makh = makh)
@@ -146,7 +146,7 @@ END$$
 DELIMITER ;
 
 DELIMITER $$
-drop procedure if exists `DanhSachTGthuocKH_toanbo`;
+-- drop procedure if exists `DanhSachTGthuocKH_toanbo`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachTGthuocKH_toanbo`(IN `maKH` VARCHAR(255))
 begin
   if exists (select * from khoahoc where khoahoc.makh = makh)
@@ -168,7 +168,7 @@ DELIMITER ;
 -- LOP HOC
 
 DELIMITER $$
-drop procedure if exists `DanhSachTGthuocLH`;
+-- drop procedure if exists `DanhSachTGthuocLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachTGthuocLH`(IN `maLH` VARCHAR(255))
 begin
   if exists (select * from lophoc where lophoc.maLH = maLH)
@@ -190,7 +190,7 @@ DELIMITER ;
 
 -- XEM GIAO TRINH ---------------------------------------------------------------------------------------
 DELIMITER $$
-drop procedure if exists `DanhSachGTrinhthuocKH`;
+-- drop procedure if exists `DanhSachGTrinhthuocKH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachGTrinhthuocKH`(IN `maKH` VARCHAR(255))
 begin
   if exists (select * from lophoc where lophoc.maLH = maLH)
@@ -211,7 +211,7 @@ DELIMITER ;
 
 -- XEM LOP HOC ---------------------------------------------------------------------------------------
 DELIMITER $$
-drop procedure if exists `DanhSachLHthuocKH_hientai`;
+-- drop procedure if exists `DanhSachLHthuocKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachLHthuocKH_hientai`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.makh = makh)
@@ -227,7 +227,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhSachLHthuocKH_toanbo`;
+-- drop procedure if exists `DanhSachLHthuocKH_toanbo`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhSachLHthuocKH_toanbo`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.makh = makh)
@@ -243,7 +243,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `ThongTinChiTietLH`;
+-- drop procedure if exists `ThongTinChiTietLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `ThongTinChiTietLH`(IN `maLH` VARCHAR(255))
 begin
   if exists (select maLH from lophoc where lophoc.maLH = maLH)
@@ -259,7 +259,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachLH_phutrach`;
+-- drop procedure if exists `DanhsachLH_phutrach`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachLH_phutrach`(IN `maNV` VARCHAR(255))
 begin
   if exists (select maNV from NHANVIEN where nhanvien.maNV = maNV)
@@ -277,7 +277,7 @@ DELIMITER ;
 
 
 DELIMITER $$
--- drop procedure if exists `DanhsachLH_phutrach_Thongtinchitiet`;
+-- -- drop procedure if exists `DanhsachLH_phutrach_Thongtinchitiet`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachLH_phutrach_Thongtinchitiet`(
   IN `maNV` VARCHAR(255),
   IN `trangthai` ENUM('hientai', 'toanbo'))
@@ -366,7 +366,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachLH_dangky_HV`;
+-- drop procedure if exists `DanhsachLH_dangky_HV`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachLH_dangky_HV_hientai`(IN `maHV` VARCHAR(255))
 begin
   if mahv in (select mahv from hocvien) then
@@ -384,7 +384,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachKH_dapung_trinhdo`;
+-- drop procedure if exists `DanhsachKH_dapung_trinhdo`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachKH_dapung_trinhdo`(IN `maHV` VARCHAR(255))
 BEGIN
   if mahv in (select mahv from hocvien) then
@@ -412,7 +412,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `XemTKBcuaLH`;
+-- drop procedure if exists `XemTKBcuaLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `XemTKBcuaLH`(IN `maLH` VARCHAR(255))
 begin
   if exists (select maLH from lophoc where lophoc.malh = malh)
@@ -428,7 +428,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `XemTKBcuaKH_hientai`;
+-- drop procedure if exists `XemTKBcuaKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `XemTKBcuaKH_hientai`(IN `maKH` VARCHAR(255))
 begin
   if exists (select maKH from khoahoc where khoahoc.maKH = maKH)
@@ -450,7 +450,7 @@ DELIMITER ;
 -- THONG KE SO LIEU KINH DOANH ---------------------------------------------------------------
 
 DELIMITER $$
-drop procedure if exists `solieukinhdoanh`;
+-- drop procedure if exists `solieukinhdoanh`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `solieukinhdoanh`()
 begin
 	SELECT COUNT(lophoc.MaLH) AS Tongso_LH_dang_mo
@@ -483,7 +483,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachHVthuocLH`;
+-- drop procedure if exists `DanhsachHVthuocLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachHVthuocLH`(IN `maLH` VARCHAR(255))
 BEGIN
   SELECT hocvien.MaHV, hocvien.Ho, hocvien.Tendem, hocvien.Ten, (year(CURRENT_TIME()) - hocvien.Namsinh) as Tuoi
@@ -496,7 +496,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachHV_thuocLH_phutrach`;
+-- drop procedure if exists `DanhsachHV_thuocLH_phutrach`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachHV_thuocLH_phutrach`(
   IN `maLH` VARCHAR(255),
   IN `maNV` VARCHAR(255))
@@ -531,7 +531,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `DanhsachCN`;
+-- drop procedure if exists `DanhsachCN`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachCN`()
 begin
   select * from chinhanh;

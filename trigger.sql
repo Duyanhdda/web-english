@@ -3,7 +3,7 @@ use main1811;
 -- SU DUNG - GT - KH ------------------------------------------------------------------------------------
 
 DELIMITER $$
-drop trigger if exists trg_before_sudung_insert;
+-- drop trigger if exists trg_before_sudung_insert;
 create trigger trg_before_sudung_insert
 before insert
 on `sudung`
@@ -19,7 +19,7 @@ END $$
 delimiter ;
 
 DELIMITER $$
-drop trigger if exists trg_before_sudung_delete;
+-- drop trigger if exists trg_before_sudung_delete;
 create trigger trg_before_sudung_delete
 before delete
 on sudung
@@ -40,7 +40,7 @@ delimiter ;
 
 
 DELIMITER $$
-drop trigger if exists trg_before_lophoc_insert;
+-- drop trigger if exists trg_before_lophoc_insert;
 create trigger trg_before_lophoc_insert
 before insert
 on lophoc
@@ -61,7 +61,7 @@ delimiter ;
 -- SELECT khoahoc.Thoiluong FROM khoahoc WHERE khoahoc.MaKH = 'KN001';
 
 DELIMITER $$
-drop trigger if exists trg_before_lophoc_update;
+-- drop trigger if exists trg_before_lophoc_update;
 create trigger trg_before_lophoc_update
 before update
 on lophoc
@@ -81,7 +81,7 @@ delimiter ;
 
 
 DELIMITER $$
-drop trigger if exists trg_before_lophoc_delete;
+-- drop trigger if exists trg_before_lophoc_delete;
 create trigger trg_before_lophoc_delete
 before delete
 on lophoc
@@ -91,3 +91,21 @@ begin
 		insert into change_log value (CURRENT_TIME(), 'delete lop hoc: ');
 END $$
 delimiter ;
+
+-- DANG KY ----------------------------------------------------------------
+
+-- DELIMITER $$
+-- -- drop trigger if exists trg_after_dangky_insert;
+-- create trigger trg_after_dangky_insert
+-- after insert
+-- on lophoc
+-- for each row
+-- begin
+-- 	select lophoc.siso into @thisisi from lophoc where lophoc.malh = new.malh;
+-- 	update lophoc
+-- 	   set lophoc.siso=@thisiso + 1
+-- 	 where lophoc.malh = new.malh;
+-- 	insert into change_log values (CURRENT_TIME(), 'dang ky lop hoc: ');
+-- END $$
+-- delimiter ;
+

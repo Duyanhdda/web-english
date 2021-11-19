@@ -499,7 +499,7 @@ INSERT INTO `trinhdo_gv` (`trinhdo`, `maNV`) VALUES
 ('Thạc sĩ Ngôn ngữ học', 'GV005');
 
 
-INSERT INTO `trinhdo_hv` (`Diem`, `Ngaycapnhat`, `hocvienMaHV`) VALUES
+INSERT INTO `trinhdo_hv` (`Diem`, `Ngaycapnhat`, `MaHV`) VALUES
 (4, '2020-01-15 05:40:50', '1912123'),
 (5, '2021-01-15 05:40:50', '1912190'),
 (6, '2021-08-15 05:40:50', '1912190'),
@@ -507,7 +507,7 @@ INSERT INTO `trinhdo_hv` (`Diem`, `Ngaycapnhat`, `hocvienMaHV`) VALUES
 (7, '2021-11-11 05:40:50', '1912190');
 
 
-INSERT INTO `trinhdo_tg` (`trinhdo`, `trogiangNhanvien`) VALUES
+INSERT INTO `trinhdo_tg` (`trinhdo`, `MaNV`) VALUES
 (7, 'TG001'),
 (7, 'TG003'),
 (8, 'TG002'),

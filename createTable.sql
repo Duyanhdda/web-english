@@ -183,18 +183,18 @@ CREATE TABLE `HOTRO` (
 ) ;
 
 CREATE TABLE `CONGTAC_GV` (
-  `GVmaNV` varchar(255) ,
+  `maNV` varchar(255) ,
   `MaCN` varchar(255) ,
-  primary key (GVmaNV, MaCN),
-  foreign key (GVmaNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE,
+  primary key (maNV, MaCN),
+  foreign key (maNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (MaCN) references CHINHANH(MaCN) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
 CREATE TABLE `CONGTAC_TG` (
-  `TGmaNV` varchar(255) ,
+  `maNV` varchar(255) ,
   `MaCN` varchar(255) ,
-  primary key (TGmaNV, MaCN),
-  foreign key (TGmaNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE,
+  primary key (maNV, MaCN),
+  foreign key (maNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (MaCN) references CHINHANH(MaCN) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
@@ -269,16 +269,16 @@ CREATE TABLE `TRINHDO_HV` (
 
 CREATE TABLE `TRINHDO_GV` (
   `trinhdo` varchar(255) ,
-  `GVmaNV` varchar(255) ,
-  primary key (trinhdo, GVmaNV),
-  foreign key (GVmaNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
+  `maNV` varchar(255) ,
+  primary key (trinhdo, maNV),
+  foreign key (maNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
 CREATE TABLE `TRINHDO_TG` (
   `trinhdo` float(2,1) ,
-  `TGmaNV` varchar(255) ,
-  primary key (trinhdo, TGmaNV),
-  foreign key (TGmaNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
+  `maNV` varchar(255) ,
+  primary key (trinhdo, maNV),
+  foreign key (maNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
 CREATE TABLE `CHANGE_LOG` (
