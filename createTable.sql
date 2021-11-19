@@ -168,18 +168,18 @@ CREATE TABLE `DANGKY` (
 
 CREATE TABLE `GIANGDAY` (
   `MaLH` varchar(255) ,
-  `GVmaNV` varchar(255) ,
-  primary key (MaLH, GVmaNV),
+  `maNV` varchar(255) ,
+  primary key (MaLH, maNV),
   foreign key (MaLH) references LOPHOC(MaLH) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (GVmaNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
+  foreign key (maNV) references GIAOVIEN(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
 CREATE TABLE `HOTRO` (
   `MaLH` varchar(255) ,
-  `TGmaNV` varchar(255) ,
-  primary key (MaLH, TGmaNV),
+  `maNV` varchar(255) ,
+  primary key (MaLH, maNV),
   foreign key (MaLH) references LOPHOC(MaLH) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (TGmaNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
+  foreign key (maNV) references TROGIANG(MaNV) ON DELETE CASCADE ON UPDATE CASCADE
 ) ;
 
 CREATE TABLE `CONGTAC_GV` (

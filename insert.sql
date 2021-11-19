@@ -1,5 +1,7 @@
 USE main1811;
 
+
+
 INSERT INTO `chinhanh` (`MaCN`, `Ten`, `Sonha`, `Duong`, `Quanhuyen`, `Tinhtp`) VALUES
 ('BD001', 'T2E CMT8', '78', 'Cách Mạng Tháng 8', 'Thành phố Thủ Dầu 1', 'Bình Dương'),
 ('BD002', 'T2E Dĩ An', '22', 'đường M', 'thành phố Dĩ An', 'Bình Dương'),
@@ -469,7 +471,7 @@ INSERT INTO `doituong_kh` (`Doituong`, `MaKH`) VALUES
 ('Trẻ thích hoạt động ngoại khóa', 'TNH003'),
 ('Trẻ trong độ tuổi tiểu học', 'TNH002');
 
-INSERT INTO `giangday` (`MaLH`, `GVmaNV`) VALUES
+INSERT INTO `giangday` (`MaLH`, `maNV`) VALUES
 ('KN001_L01', 'GV001'),
 ('KN001_L02', 'GV001'),
 ('KN003_L03', 'GV002'),
@@ -481,7 +483,7 @@ INSERT INTO `giangday` (`MaLH`, `GVmaNV`) VALUES
 ('TNH001_L01', 'GV005'),
 ('TNH001_L02', 'GV005');
 
-INSERT INTO `hotro` (`MaLH`, `TGmaNV`) VALUES
+INSERT INTO `hotro` (`MaLH`, `maNV`) VALUES
 ('KN001_L01', 'TG001'),
 ('KN003_L03', 'TG002'),
 ('OT001_L01', 'TG003'),
