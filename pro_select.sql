@@ -44,6 +44,21 @@ END$$
 DELIMITER ;
 
 
+
+DELIMITER $$
+drop procedure if exists `HV_thongtinchitiet_KH`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `HV_thongtinchitiet_KH`(
+    IN `maKH` VARCHAR(255))
+BEGIN
+
+    select * from lophoc natural join chinhanh
+        where lophoc.makh = makh and lophoc.ngayketthuc > CURRENT_TIME();
+
+    call XemTKBcuaKH_hientai(makh);
+
+END$$
+DELIMITER ;
+
 -- XEM GIAO VIEN ---------------------------------------------------------------------------------------
 -- KHOA HOC 
 
@@ -305,7 +320,7 @@ begin
       end;
     end if;
 
-  else if (manv in (select manv from hotro)) THEN -- neu nhan vien  la tro giang
+  elseif (manv in (select manv from hotro)) THEN -- neu nhan vien  la tro giang
     if (trangthai = 'toanbo') then -- xem toan bo nhung lop ma minh phu trach
       begin
         select * from lophoc where lophoc.malh in (select malh from hotro where hotro.manv = manv);
@@ -350,8 +365,46 @@ DELIMITER ;
 
 
 
+DELIMITER $$
+drop procedure if exists `DanhsachLH_dangky_HV`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachLH_dangky_HV_hientai`(IN `maHV` VARCHAR(255))
+begin
+  if mahv in (select mahv from hocvien) then
+      select * from lophoc where lophoc.malh in (select malh from dangky where dangky.mahv = mahv)
+        and lophoc.ngayketthuc > CURRENT_TIME();
+
+      select * from thoikhoabieu_lh where thoikhoabieu_lh.malh in (select malh from dangky where dangky.mahv = mahv)
+        and lophoc.ngayketthuc > CURRENT_TIME();
+  else signal sqlstate '45000' set message_text = 'Không tìm thấy học viên';
+  end if;
+END$$
+DELIMITER ;
 
 
+
+
+DELIMITER $$
+drop procedure if exists `DanhsachKH_dapung_trinhdo`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachKH_dapung_trinhdo`(IN `maHV` VARCHAR(255))
+BEGIN
+  if mahv in (select mahv from hocvien) then
+    SELECT khoahoc.MaKH, khoahoc.Ten, khoahoc.Hocphi,
+      khoahoc.Noidung, khoahoc.Thoiluong, khoahoc.Trangthai, khoahoc.Gioihansiso, khoahoc.Yeucautrinhdo
+      FROM khoahoc
+      WHERE khoahoc.Yeucautrinhdo <= (
+          SELECT trinhdo_hv.Diem
+        FROM trinhdo_hv 
+        WHERE trinhdo_hv.Ngaycapnhat IN(
+          SELECT max(Ngaycapnhat)
+          FROM trinhdo_hv
+          WHERE trinhdo_hv.MaHV = maHV)
+          )
+          ORDER BY khoahoc.Yeucautrinhdo;   
+  else signal sqlstate '45000' set message_text = 'Không tìm thấy học viên';
+  end if;
+
+END$$
+DELIMITER ;
 
 
 
@@ -378,21 +431,20 @@ DELIMITER $$
 drop procedure if exists `XemTKBcuaKH_hientai`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `XemTKBcuaKH_hientai`(IN `maKH` VARCHAR(255))
 begin
-  if exists (select maKH from khoahoc where lophoc.maKH = maKH)
+  if exists (select maKH from khoahoc where khoahoc.maKH = maKH)
     then begin
       select *
         from thoikhoabieu_lh
        where thoikhoabieu_lh.malh in (
-         select malh
+         select lophoc.malh
            from lophoc
           where lophoc.makh = makh
-       ) and thoikhoabieu_lh.ngayketthuc > CURRENT_TIME();
+          and lophoc.ngayketthuc > CURRENT_TIME()) ;
     end;
   else signal sqlstate '45000' set message_text = 'Không tồn tại khóa học này';
   end if;
 END$$
 DELIMITER ;
-
 
 
 -- THONG KE SO LIEU KINH DOANH ---------------------------------------------------------------
@@ -431,7 +483,7 @@ DELIMITER ;
 
 
 DELIMITER $$
-drop procedure if exists `solieukinhdoanh`;
+drop procedure if exists `DanhsachHVthuocLH`;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachHVthuocLH`(IN `maLH` VARCHAR(255))
 BEGIN
   SELECT hocvien.MaHV, hocvien.Ho, hocvien.Tendem, hocvien.Ten, (year(CURRENT_TIME()) - hocvien.Namsinh) as Tuoi
@@ -439,6 +491,53 @@ BEGIN
   WHERE dangky.lophocMaLH = maLH;
 END$$
 DELIMITER ;
+
+
+
+
+DELIMITER $$
+drop procedure if exists `DanhsachHV_thuocLH_phutrach`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachHV_thuocLH_phutrach`(
+  IN `maLH` VARCHAR(255),
+  IN `maNV` VARCHAR(255))
+begin
+  if manv in (select manv from giangday) then -- nhan vien la giao vien
+  begin
+    if malh in (select malh from giangday where giangday.manv = manv) then -- xuat bang hoc vien
+      select hocvien.mahv, hocvien.ho, hocvien.tendem, hocvien.ten, (year(CURRENT_TIME()) - hocvien.Namsinh) as Tuoi
+        from hocvien where hocvien.mahv in (
+          select mahv from dangky where dangky.malh in (
+            select malh from giangday where giangday.manv = manv));
+    else signal sqlstate '45000' set message_text = 'Lớp học này không do bạn phụ trách';
+    end if;
+  end;
+  elseif manv in (select manv from hotro) then -- nhan vien la tro giang
+  begin
+    if malh in (select malh from hotro where hotro.manv = manv) then -- xuat bang hoc vien
+      select hocvien.mahv, hocvien.ho, hocvien.tendem, hocvien.ten, (year(CURRENT_TIME()) - hocvien.Namsinh) as Tuoi
+        from hocvien where hocvien.mahv in (
+          select mahv from dangky where dangky.malh in (
+            select malh from hotro where hotro.manv = manv));
+    else signal sqlstate '45000' set message_text = 'Lớp học này không do bạn phụ trách';
+    end if;    
+  end;
+  else signal sqlstate '45000' set message_text = 'Không tồn tại giáo viên hoặc trợ giảng sỡ hữu mã nhân viên này.';
+  end if;
+
+END$$
+DELIMITER ;
+
+-- CHI NHANH ----------------------------------------------------------------------------------------
+
+
+DELIMITER $$
+drop procedure if exists `DanhsachCN`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DanhsachCN`()
+begin
+  select * from chinhanh;
+END$$
+DELIMITER ;
+
 
 
 

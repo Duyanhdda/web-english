@@ -354,14 +354,14 @@ INSERT INTO `giaovien` (`Kinhnghiem`, `MaNV`) VALUES
 (6, 'GV004'),
 (8, 'GV005');
 
-INSERT INTO `congtac_gv` (`GVmaNV`, `MaCN`) VALUES
+INSERT INTO `congtac_gv` (`maNV`, `MaCN`) VALUES
 ('GV001', 'HCM009'),
 ('GV002', 'HCM010'),
 ('GV003', 'HCM009'),
 ('GV004', 'HCM014'),
 ('GV005', 'HN001');
 
-INSERT INTO `congtac_tg` (`TGmaNV`, `MaCN`) VALUES
+INSERT INTO `congtac_tg` (`maNV`, `MaCN`) VALUES
 ('TG001', 'HCM009'),
 ('TG002', 'HCM010'),
 ('TG003', 'HCM014'),
@@ -490,7 +490,7 @@ INSERT INTO `hotro` (`MaLH`, `maNV`) VALUES
 ('OT001_L02', 'TG003'),
 ('TNH001_L01', 'TG004');
 
-INSERT INTO `trinhdo_gv` (`trinhdo`, `GVmaNV`) VALUES
+INSERT INTO `trinhdo_gv` (`trinhdo`, `maNV`) VALUES
 ('Cử nhân Kinh doanh Quốc tế', 'GV002'),
 ('Cử nhân ngôn ngữ anh', 'GV003'),
 ('Cử nhân sư phạm anh', 'GV004'),
@@ -498,4 +498,18 @@ INSERT INTO `trinhdo_gv` (`trinhdo`, `GVmaNV`) VALUES
 ('Thạc sĩ Ngôn ngữ học', 'GV002'),
 ('Thạc sĩ Ngôn ngữ học', 'GV005');
 
+
+INSERT INTO `trinhdo_hv` (`Diem`, `Ngaycapnhat`, `hocvienMaHV`) VALUES
+(4, '2020-01-15 05:40:50', '1912123'),
+(5, '2021-01-15 05:40:50', '1912190'),
+(6, '2021-08-15 05:40:50', '1912190'),
+(6, '2021-11-05 05:40:50', '1912123'),
+(7, '2021-11-11 05:40:50', '1912190');
+
+
+INSERT INTO `trinhdo_tg` (`trinhdo`, `trogiangNhanvien`) VALUES
+(7, 'TG001'),
+(7, 'TG003'),
+(8, 'TG002'),
+(8, 'TG004');
 
