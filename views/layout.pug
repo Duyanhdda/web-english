@@ -70,12 +70,12 @@ head
                   | 2 days ago
         li.nav-item.nav-profile.dropdown
           a#profileDropdown.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
-            img(src='images/faces/face28.jpg', alt='profile')
+            img(src=picture, alt='profile')
           .dropdown-menu.dropdown-menu-right.navbar-dropdown(aria-labelledby='profileDropdown')
             a.dropdown-item
               i.ti-settings.text-primary
               |                 Settings
-            a.dropdown-item
+            a.dropdown-item(href='logout')
               i.ti-power-off.text-primary
               |                 Logout
         li.nav-item.nav-settings.d-none.d-lg-flex

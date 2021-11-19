@@ -3,10 +3,10 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { MainModule } from './modules/main/main.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), ConfigModule.forRoot(),MainModule],
+  imports: [TypeOrmModule.forRoot(), ConfigModule.forRoot(),AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
