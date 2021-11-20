@@ -32,7 +32,7 @@ export class Nhanvien {
   })
   Gioitinh: "male" | "female" | null;
 
-  @Column("varchar", { name: "Email", nullable: true, length: 255 })
+  @Column("varchar", { name: "Email", length: 255 })
   email: string | null;
 
   @Column("int", { name: "Sodienthoai", nullable: true })

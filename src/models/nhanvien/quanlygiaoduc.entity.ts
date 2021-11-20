@@ -13,7 +13,9 @@ import {
   @Entity()
   export class Quanlygiaoduc {
 
-    @OneToOne(type => Nhanvien, { primary: true })
+    @OneToOne(type => Nhanvien, { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     nhanvien: Nhanvien;
   }

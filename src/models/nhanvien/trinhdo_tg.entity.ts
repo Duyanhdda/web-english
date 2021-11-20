@@ -6,7 +6,9 @@ export class Trinhdo_tg {
   @PrimaryColumn()
   trinhdo: number;
 
-  @ManyToOne(() => Trogiang , { primary: true})
+  @ManyToOne(() => Trogiang , { primary: true,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   trogiang: Trogiang;
 }

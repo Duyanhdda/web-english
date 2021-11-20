@@ -17,7 +17,10 @@ import { Hocvien } from './hocvien.entity';
     @PrimaryColumn()
     Ngaycapnhat: Date;
 
-    @ManyToOne(() => Hocvien, { primary: true })
+    @ManyToOne(() => Hocvien, { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",
+    })
     @JoinColumn()
     hocvien: Hocvien;
   

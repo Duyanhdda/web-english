@@ -19,7 +19,9 @@ import { Khoahoc } from './khoahoc.entity';
     @Column()
     Loaichungchi: string;
 
-    @OneToOne(type => Khoahoc, { primary: true })
+    @OneToOne(type => Khoahoc, { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     khoahoc: Khoahoc;
   

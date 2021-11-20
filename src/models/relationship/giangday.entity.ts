@@ -15,11 +15,15 @@ import { Lophoc } from '../lophoc/lophoc.entity';
   @Entity()
   export class Giangday {
     
-    @ManyToOne(type => Lophoc, { primary: true })
+    @ManyToOne(type => Lophoc, { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     lophoc: Lophoc;
   
-    @ManyToOne(type => Giaovien, { primary: true })
+    @ManyToOne(type => Giaovien, { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     giaovien: Giaovien;
   }

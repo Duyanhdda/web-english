@@ -13,11 +13,15 @@ import { Hocvien } from '../hocvien/hocvien.entity';
 
 @Entity()
 export class Dangky {
-  @ManyToOne((type) => Lophoc, { primary: true })
+  @ManyToOne((type) => Lophoc, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   lophoc: Lophoc;
 
-  @ManyToOne((type) => Hocvien, { primary: true })
+  @ManyToOne((type) => Hocvien, { primary: true,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE", })
   @JoinColumn()
   hocvien: Hocvien;
 

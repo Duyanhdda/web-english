@@ -14,11 +14,15 @@ import { Khoahoc } from '../khoahoc/khoahoc.entity';
 
 @Entity()
 export class Sudung {
-  @ManyToOne((type) => Giaotrinh, { primary: true })
+  @ManyToOne((type) => Giaotrinh, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   giaotrinh: Giaotrinh;
 
-  @ManyToOne((type) => Khoahoc, { primary: true }) 
+  @ManyToOne((type) => Khoahoc, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",}) 
   @JoinColumn()
   khoahoc: Khoahoc;
 }

@@ -13,7 +13,10 @@ import { Giaotrinh } from './giaotrinh.entity';
     @PrimaryColumn()
     Tacgia: string;
   
-    @ManyToOne(() => Giaotrinh, { primary: true })
+    @ManyToOne(() => Giaotrinh, {primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",
+    })
     @JoinColumn()
     giaotrinh: Giaotrinh;
   

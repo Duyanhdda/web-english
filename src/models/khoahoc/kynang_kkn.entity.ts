@@ -15,7 +15,9 @@ import { Khoakynang } from './khoakynang.entity';
     @PrimaryColumn()
     Kynang: string;
 
-    @ManyToOne(() => Khoakynang , { primary: true })
+    @ManyToOne(() => Khoakynang , { primary: true ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     khoakynang: Khoakynang;
   

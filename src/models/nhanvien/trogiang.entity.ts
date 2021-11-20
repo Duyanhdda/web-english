@@ -16,7 +16,9 @@ import {
     Kinhnghiem: number;
 
 
-    @OneToOne(type => Nhanvien, { primary: true })
+    @OneToOne(type => Nhanvien, { primary: true,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE", })
     @JoinColumn()
     nhanvien: Nhanvien;
   }

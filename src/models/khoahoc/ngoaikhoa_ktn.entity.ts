@@ -15,7 +15,9 @@ import {
     @PrimaryColumn()
     Ngoaikhoa: string;
 
-    @ManyToOne(() => Khoathieunhi, { primary: true})
+    @ManyToOne(() => Khoathieunhi, { primary: true,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     khoathieunhi: Khoathieunhi;
   

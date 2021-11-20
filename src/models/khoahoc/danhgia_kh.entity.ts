@@ -18,7 +18,9 @@ import { Khoahoc } from './khoahoc.entity';
     @PrimaryColumn()
     Noidung: string;
 
-    @ManyToOne(() => Khoahoc, { primary: true})
+    @ManyToOne(() => Khoahoc, { primary: true,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     khoahoc: Khoahoc;
   

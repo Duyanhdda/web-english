@@ -13,11 +13,15 @@ import { Trogiang } from '../nhanvien/trogiang.entity';
 
 @Entity()
 export class Hotro {
-  @ManyToOne((type) => Lophoc, { primary: true })
+  @ManyToOne((type) => Lophoc, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   lophoc: Lophoc;
 
-  @ManyToOne((type) => Trogiang, { primary: true })
+  @ManyToOne((type) => Trogiang, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   trogiang: Trogiang;
 }

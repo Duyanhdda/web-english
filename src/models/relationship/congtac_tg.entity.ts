@@ -14,11 +14,15 @@ import {
 
 @Entity()
 export class Congtac_tg {
-  @ManyToOne((type) => Trogiang, { primary: true })
+  @ManyToOne((type) => Trogiang, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   trogiang: Trogiang;
 
-  @ManyToOne((type) => Chinhanh, { primary: true })
+  @ManyToOne((type) => Chinhanh, { primary: true ,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   chinhanh: Chinhanh;
 }

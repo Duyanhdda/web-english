@@ -6,7 +6,9 @@ export class Trinhdo_gv {
   @PrimaryColumn()
   trinhdo: string;
 
-  @ManyToOne(() => Giaovien, { primary: true})
+  @ManyToOne(() => Giaovien, { primary: true,
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE",})
   @JoinColumn()
   giaovien: Giaovien;
 }

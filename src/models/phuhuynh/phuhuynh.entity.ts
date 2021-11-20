@@ -13,7 +13,9 @@ import { Hocvien } from '../hocvien/hocvien.entity';
   @Entity()
   export class Phuhuynh {
 
-    @OneToOne(() => Hocvien, { primary: true})
+    @OneToOne(() => Hocvien, { primary: true,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     hocvien: Hocvien;
 

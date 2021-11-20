@@ -8,7 +8,8 @@ export class MainController {
     @UseGuards(AuthGuard('jwt'))
     @Render("layout")
     async index(@Req() req: Request, @Res() res: Response) {
-        const picture: string = req.user["picture"] as string;
+        var picture: string = req.user["picture"] as string;
+        if(!picture) picture = "/images/faces/face11.jpg";
         const viewBag = {
             picture: picture
         }

@@ -2,9 +2,11 @@ import {
     Column,
     CreateDateColumn,
     Entity,
+    Index,
     JoinColumn,
     OneToOne,
     PrimaryColumn,
+    Unique,
     UpdateDateColumn,
   } from 'typeorm';
   enum Gender {
@@ -33,7 +35,8 @@ import {
     })
     gioitinh: "male" | "female" | null;
 
-    @Column({ nullable: true })
+    @Column({ nullable: false })
+    @Index({ unique: true })
     Email: string;
 
     @Column({ nullable: true })
@@ -53,5 +56,8 @@ import {
 
     @Column({ nullable: true  })
     Sodienthoai: number;
+
+    @Column({ nullable: true })
+    password: string;
   }
   

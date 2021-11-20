@@ -25,11 +25,15 @@ import { Khoahoc } from '../khoahoc/khoahoc.entity';
     @Column()
     Siso: number;
   
-    @ManyToOne(() => Chinhanh,{ nullable: false })
+    @ManyToOne(() => Chinhanh,{ nullable: false ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     chinhanh: Chinhanh;
 
-    @ManyToOne(() => Khoahoc,{ nullable: false })
+    @ManyToOne(() => Khoahoc,{ nullable: false ,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     khoahoc: Khoahoc;
   }

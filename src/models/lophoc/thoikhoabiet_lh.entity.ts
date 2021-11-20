@@ -25,7 +25,9 @@ import {
     @PrimaryColumn()
     Gioketthuc: number;
 
-    @ManyToOne(() => Lophoc, {primary: true})
+    @ManyToOne(() => Lophoc, {primary: true,
+      onDelete: "CASCADE",
+      onUpdate: "CASCADE",})
     @JoinColumn()
     lophoc: Lophoc;
   

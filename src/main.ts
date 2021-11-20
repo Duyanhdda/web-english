@@ -12,6 +12,13 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('pug');
   app.use(cookieParser());
+  app.use(
+    session({
+      secret: process.env["SESSION_SECRET"],
+      resave: false,
+      saveUninitialized: false,
+    })
+  );
   app.use(flash());
   app.enableCors();
   moment.locale('vi');
