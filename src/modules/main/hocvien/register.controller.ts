@@ -10,7 +10,7 @@ import * as bcrypt from 'bcrypt';
 export class RegisterController {
     constructor( private hocvienService: hocvienService) {}
     @Get()  
-    @Render("infohocvien/register.pug")
+    @Render("register/index.pug")
     async index() {
 
     }

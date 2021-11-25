@@ -6,7 +6,7 @@ export class MainController {
 
     @Get()  
     @UseGuards(AuthGuard('jwt'))
-    @Render("layout")
+    @Render("hocvien/layout")
     async index(@Req() req: Request, @Res() res: Response) {
         var picture: string = req.user["picture"] as string;
         if(!picture) picture = "/images/faces/face11.jpg";

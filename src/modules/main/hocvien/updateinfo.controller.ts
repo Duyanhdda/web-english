@@ -4,12 +4,12 @@ import { AuthGuard } from '@nestjs/passport';
 import { Hocvien } from 'src/models/hocvien/hocvien.entity';
 import { hocvienService } from 'src/services/hocvien.service';
 
-@Controller("updateinfo")
+@Controller("updatehocvien")
 export class UpdateinfoController {
     constructor( private hocvienService: hocvienService) {}
     @Get()  
     @UseGuards(AuthGuard('jwt'))
-    @Render("infohocvien/index.pug")
+    @Render("hocvien/infohocvien/index.pug")
     async index(@Req() req: Request, @Res() res: Response) {
         var picture: string = req.user["picture"] as string;
         var email: string = req.user["email"] as string;
@@ -54,6 +54,6 @@ export class UpdateinfoController {
             await this.hocvienService.savedata(studentToEdit);
         }
         // await this.studentService.edit(studentToEdit);
-        res.redirect("/updateinfo");  
+        res.redirect("/updatehocvien");  
     }
 }
