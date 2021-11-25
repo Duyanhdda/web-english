@@ -493,17 +493,17 @@ blockquote::before {
 
 #mode-toggler {
     border-radius: 100%;
-    v-align: middle;
+    vertical-align: middle;
     background: #fff;
     cursor: pointer;
-    -webkit-animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1)
+    animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1)
 }
 
 #mode-toggler:hover {
-    -webkit-animation: none
+    animation: none
 }
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
     to {
         box-shadow: 0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #fff
     }
