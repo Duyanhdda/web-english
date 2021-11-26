@@ -1930,7 +1930,7 @@ body.dm-light .pan-loader .shadow {
 
 .product-item__price {
     margin-bottom: 35px;
-    font-family: "KaushanScript";
+    font-family: "Lobster-Regular";
     font-size: 18px;
     font-style: normal;
     letter-spacing: normal;
@@ -1939,7 +1939,7 @@ body.dm-light .pan-loader .shadow {
 }
 
 .product-item__price .value {
-    font-family: "KaushanScript";
+    font-family: "Lobster-Regular";
     font-size: 26px;
     font-weight: 400;
 }
