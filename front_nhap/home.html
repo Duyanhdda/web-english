@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/uikit.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
     <link id="dm-light" rel="stylesheet" href="assets/css/light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,17 @@
                         <div class="uk-navbar-left"><button class="uk-button" type="button" data-target="#offcanvas" data-uk-toggle data-uk-icon="menu"></button>
                             <ul class="uk-navbar-nav">
                                 <li><a href="home.html">TRANG CHỦ</a></li>
-                                <li><a href="page-catalog-sidebar.html">KHÓA HỌC</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="page-catalog-sidebar.html"><button class="dropbtn">KHÓA HỌC</button></a>
+                                        <div class="dropdown-content">
+                                            <a href="#">KHÓA THIẾU NHI</a>
+                                            <a href="#">KHÓA THIẾU NIÊN</a>
+                                            <a href="#">KHÓA ÔN THI</a>
+                                            <a href="#">KHÓA KỸ NĂNG</a>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li><a href="page-blog-article.html">CHI NHÁNH</a></li>
                             </ul>
                         </div>
@@ -274,7 +285,6 @@
             <div class="section-about">
                 <div class="uk-margin-large-top uk-container uk-container-small">
                     <article class="article-full">
-
                         <div class="article-full__image">
                             <a href=""><img src="assets/img/pages/home/introbanner.jpg" alt="img-article"></a>
                         </div>
@@ -334,113 +344,106 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+                    </article>
                 </div>
             </div>
-
-
-
-
-    </div>
-
-
-    </main>
-    <footer class="page-footer" style="background-color: #FCF7F7;">
-        <div class="page-footer__top">
-            <div class="uk-container">
-                <div class="page-footer__logo">
-                    <div class="logo">
-                        <a class="logo__link" href="home.html"><img class="logo__img" src="assets/img/logo.png" alt="logo"></a>
+        </main>
+        <footer class="page-footer" style="background-color: #FCF7F7;">
+            <div class="page-footer__top">
+                <div class="uk-container">
+                    <div class="page-footer__logo">
+                        <div class="logo">
+                            <a class="logo__link" href="home.html"><img class="logo__img" src="assets/img/logo.png" alt="logo"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="page-footer__contacts">
-                    <div class="contact-item-box">
-                        <div class="contact-item-box__title">Địa chỉ </div>
-                        <div class="contact-item-box__value">38C - 39C, quốc lộ 1A,<br> Tân Thới Hiệp, Quận 12, Tp.HCM</div>
-                    </div>
-                    <div class="contact-item-box">
-                        <div class="contact-item-box__title">Mở cửa</div>
-                        <div class="contact-item-box__value">Thứ 2 - Thứ 7: 10:00 AM – 11:30 PM<br> Chủ nhật: 9:00 AM – 4:00 PM</div>
-                    </div>
-                    <div class="contact-item-box">
-                        <div class="contact-item-box__title">Liên hệ</div>
-                        <div class="contact-item-box__value">Email: <a href="mailto:cloudythy@gmail.com">t2e@gmail.com</a><br> Điện thoại:<a href="tel:0394143031"> 0394143031</a></div>
+                    <div class="page-footer__contacts">
+                        <div class="contact-item-box">
+                            <div class="contact-item-box__title">Địa chỉ </div>
+                            <div class="contact-item-box__value">38C - 39C, quốc lộ 1A,<br> Tân Thới Hiệp, Quận 12, Tp.HCM</div>
+                        </div>
+                        <div class="contact-item-box">
+                            <div class="contact-item-box__title">Mở cửa</div>
+                            <div class="contact-item-box__value">Thứ 2 - Thứ 7: 10:00 AM – 11:30 PM<br> Chủ nhật: 9:00 AM – 4:00 PM</div>
+                        </div>
+                        <div class="contact-item-box">
+                            <div class="contact-item-box__title">Liên hệ</div>
+                            <div class="contact-item-box__value">Email: <a href="mailto:cloudythy@gmail.com">t2e@gmail.com</a><br> Điện thoại:<a href="tel:0394143031"> 0394143031</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="page-footer__middle">
-            <div class="uk-container">
-                <ul class="uk-navbar-nav">
-                    <li><a href="/">Trang chủ</a></li>
-                    <li><a href="page-catalog-sidebar.html">Khóa học</a></li>
-                    <li><a href="#">Chi nhánh</a></li>
-                    <li><a href="page-wishlist.html">Về chúng tôi</a></li>
-                    <li><a href="page-blog.html">Tin tức</a></li>
-                    <li><a href="page-contacts.html">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="page-footer__bottom">
-            <div class="uk-container">
-                <div class="page-footer__social">
-                    <ul class="social">
-                        <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="page-footer__copy"><span>©2018 t2e</span><a href="#!">Terms and Conditions</a></div>
-            </div>
-        </div>
-        <div id="offcanvas" data-uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
-                <div class="uk-margin-top">
-                    <ul class="uk-nav">
+            <div class="page-footer__middle">
+                <div class="uk-container">
+                    <ul class="uk-navbar-nav">
                         <li><a href="/">Trang chủ</a></li>
-                        <li><a href="page-blog-article.html">Khóa học</a></li>
-                        <li><a href="page-catalog-sidebar.html">Chi nhánh</a></li>
-                        <li><a href="page-catalog.html">Về chúng tôi</a></li>
+                        <li><a href="page-catalog-sidebar.html">Khóa học</a></li>
+                        <li><a href="#">Chi nhánh</a></li>
+                        <li><a href="page-wishlist.html">Về chúng tôi</a></li>
                         <li><a href="page-blog.html">Tin tức</a></li>
                         <li><a href="page-contacts.html">Liên hệ</a></li>
                     </ul>
                 </div>
-                <hr class="uk-margin">
-                <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
-                    <li class="uk-parent"><a href="page-catalog.html">Khóa thiếu nhi</a>
-                    </li>
+            </div>
+            <div class="page-footer__bottom">
+                <div class="uk-container">
+                    <div class="page-footer__social">
+                        <ul class="social">
+                            <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="#!"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__copy"><span>©2018 t2e</span><a href="#!">Terms and Conditions</a></div>
+                </div>
+            </div>
+            <div id="offcanvas" data-uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+                    <div class="uk-margin-top">
+                        <ul class="uk-nav">
+                            <li><a href="/">Trang chủ</a></li>
+                            <li><a href="page-blog-article.html">Khóa học</a></li>
+                            <li><a href="page-catalog-sidebar.html">Chi nhánh</a></li>
+                            <li><a href="page-catalog.html">Về chúng tôi</a></li>
+                            <li><a href="page-blog.html">Tin tức</a></li>
+                            <li><a href="page-contacts.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <hr class="uk-margin">
+                    <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+                        <li class="uk-parent"><a href="page-catalog.html">Khóa thiếu nhi</a>
+                        </li>
 
-                    <li class="uk-parent"><a href="page-catalog.html">Khóa thiếu niên</a>
-                    </li>
+                        <li class="uk-parent"><a href="page-catalog.html">Khóa thiếu niên</a>
+                        </li>
 
-                    <li class="uk-parent"><a href="page-catalog.html">Khóa ôn thi</a>
-                    </li>
+                        <li class="uk-parent"><a href="page-catalog.html">Khóa ôn thi</a>
+                        </li>
 
-                    <li class="uk-parent"><a href="page-catalog.html">Khóa kỹ năng</a>
-                    </li>
-                </ul>
-                <hr class="uk-margin">
-                <div class="uk-margin-bottom">
-                    <div class="block-with-phone"><img src="assets/img/icons/delivery.svg" alt="delivery" data-uk-svg>
-                        <div> <span>Liên hệ ngay với chúng tôi</span><a href="tel:13205448749">0394143031</a></div>
+                        <li class="uk-parent"><a href="page-catalog.html">Khóa kỹ năng</a>
+                        </li>
+                    </ul>
+                    <hr class="uk-margin">
+                    <div class="uk-margin-bottom">
+                        <div class="block-with-phone"><img src="assets/img/icons/delivery.svg" alt="delivery" data-uk-svg>
+                            <div> <span>Liên hệ ngay với chúng tôi</span><a href="tel:13205448749">0394143031</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="uk-flex-top" id="callback" data-uk-modal="">
-            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"><button class="uk-modal-close-default" type="button" data-uk-close=""></button>
-                <p></p>
+            <div class="uk-flex-top" id="callback" data-uk-modal="">
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"><button class="uk-modal-close-default" type="button" data-uk-close=""></button>
+                    <p></p>
+                </div>
             </div>
-        </div>
-        <div class="uk-modal-full uk-modal" id="modal-full" data-uk-modal>
-            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
-                <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+            <div class="uk-modal-full uk-modal" id="modal-full" data-uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
+                    <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
