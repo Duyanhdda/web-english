@@ -1797,7 +1797,7 @@ body.dm-light .pan-loader .shadow {
 .product-item__title a:hover,
 .product-item__title a:focus,
 .product-item__title a:active {
-    color: #ec1435;
+    color: #ec1435!important;
     text-decoration: none;
 }
 
