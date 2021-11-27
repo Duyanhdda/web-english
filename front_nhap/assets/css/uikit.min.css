@@ -60,13 +60,13 @@ em {
 }
 
 ins {
-    background: #ffd;
+    background: rgb(253, 230, 230);
     color: #666;
     text-decoration: none
 }
 
 mark {
-    background: #ffd;
+    background: rgb(253, 230, 230);
     color: #666
 }
 
@@ -811,12 +811,12 @@ a.uk-link-reset {
 
 .uk-table-hover tbody tr:hover,
 .uk-table-hover>tr:hover {
-    background: #ffd
+    background: rgb(253, 230, 230)
 }
 
 .uk-table tbody tr.uk-active,
 .uk-table>tr.uk-active {
-    background: #ffd
+    background: rgb(253, 230, 230)
 }
 
 .uk-table-small td,
@@ -3250,7 +3250,7 @@ select.uk-form-width-xsmall {
 }
 
 @media (min-width:960px) {
-    :not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
+     :not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
         left: 350px
     }
     .uk-offcanvas-flip.uk-offcanvas-container-animation {
@@ -10864,8 +10864,8 @@ iframe.uk-cover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         background: 0 0!important;
         color: #000!important;
         box-shadow: none!important;
