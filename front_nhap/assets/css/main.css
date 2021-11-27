@@ -3569,16 +3569,16 @@ body.dm-light .pan-loader .shadow {
 
 .product-full-card__price {
     margin-bottom: 35px;
-    font-family: "KaushanScript";
-    font-size: 18px;
+    font-family: "Lobster-Regular";
+    font-size: 25px;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
 }
 
 .product-full-card__price .value {
-    font-family: "KaushanScript";
-    font-size: 26px;
+    font-family: "Lobster-Regular";
+    font-size: 35px;
     font-weight: 400;
 }
 
