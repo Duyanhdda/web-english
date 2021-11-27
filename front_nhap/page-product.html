@@ -286,18 +286,101 @@
                             </ul>
                             <ul class="uk-switcher uk-margin">
                                 <li>
-                                    <p>Cupidatat non proident, suntin culp quiofc deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                                    <p>Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                                    <ul class="product-full-card__info-list">
-                                        <li><strong>Energy</strong><span>450 calories</span></li>
-                                        <li><strong>Total Fats</strong><span>10 g (saturated 26%)</span></li>
-                                        <li><strong>Carbohydrates</strong><span>21 g (Total Sugars 4g)</span></li>
-                                        <li><strong>Protein</strong><span> 38 g</span></li>
-                                    </ul>
-                                    <p>Cupidatat non proident, suntin culp quiofc deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                                    <p>Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                                    <div class="uk-grid uk-grid-divider" data-uk-grid-match>
+                                        <div class="uk-width-2-3">
+                                            <table class="uk-table uk-table-striped uk-table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <td align="center">Mã Lớp học</td>
+                                                        <td align="center">Ngày bắt đầu</td>
+                                                        <td align="center">Ngày kết thúc</td>
+                                                        <td align="center">Sĩ số</td>
+                                                        <td align="center">Chi nhánh</td>
+                                                        <td align="center">Xem TKB</td>
+                                                        <td align="center">Đăng ký</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">KN001_L01</td>
+                                                        <td align="center">2021-09-27 15:00:00</td>
+                                                        <td align="center">2021-12-19 15:00:00</td>
+                                                        <td align="center">7</td>
+                                                        <td align="center">HN001</td>
+                                                        <td align="center">
+                                                            <input id="toggleVisibilityButton" class="uk-button uk-button-default" type="button" value="XemTKB" />
+                                                        </td>
+                                                        <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">KN001_L02</td>
+                                                        <td align="center">2020-09-27 15:00:00</td>
+                                                        <td align="center">2020-12-19 15:00:00</td>
+                                                        <td align="center">5</td>
+                                                        <td align="center">BD001</td>
+                                                        <td align="center">
+                                                            <input id="toggleVisibilityButton2" class="uk-button uk-button-default" type="button" value="XemTKB" />
+                                                        </td>
+                                                        <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="uk-width-1-5">
+                                            <table id="displaytable" style="display:none" class="uk-table uk-table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <td align="center">Thứ</td>
+                                                        <td class="uk-table-expand" align="center">Giờ bắt đầu</td>
+                                                        <td class="uk-table-expand" align="center">Giờ kết thúc</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">3</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">5</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">7</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table id="displaytable2" style="display:none;margin-top: 0;padding:0;" class="uk-table uk-table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <td align="center">Thứ</td>
+                                                        <td class="uk-table-expand" align="center">Giờ bắt đầu</td>
+                                                        <td class="uk-table-expand" align="center">Giờ kết thúc</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">2</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">4</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">6</td>
+                                                        <td align="center">17h</td>
+                                                        <td align="center">19h</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <p>Cupidatat non proident, suntin culp quiofc deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -478,6 +561,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fontawesome.all.min.js"></script>
     <script src="assets/js/cart-process.js"></script>
+    <script src="assets/js/khoahoc-btn.js"></script>
 </body>
 
 </html>
