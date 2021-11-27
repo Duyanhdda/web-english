@@ -192,164 +192,174 @@
                                 <li>
                                     <div class="uk-grid uk-grid-divider" data-uk-grid-match>
                                         <div class="uk-width-2-3">
-                                            <table class="uk-table uk-table-striped uk-table-hover">
-                                                <thead style="font-weight: 700;">
-                                                    <tr>
-                                                        <td align="center">Mã Lớp học</td>
-                                                        <td align="center">Ngày bắt đầu</td>
-                                                        <td align="center">Ngày kết thúc</td>
-                                                        <td align="center">Sĩ số</td>
-                                                        <td align="center">Chi nhánh</td>
-                                                        <td align="center">Xem TKB</td>
-                                                        <td align="center">Đăng ký</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center">KN001_L01</td>
-                                                        <td align="center">2021-09-27 15:00:00</td>
-                                                        <td align="center">2021-12-19 15:00:00</td>
-                                                        <td align="center">7</td>
-                                                        <td align="center">HN001</td>
-                                                        <td align="center">
-                                                            <input id="toggleVisibilityButton" class="uk-button uk-button-default" type="button" value="XemTKB" />
-                                                        </td>
-                                                        <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">KN001_L02</td>
-                                                        <td align="center">2020-09-27 15:00:00</td>
-                                                        <td align="center">2020-12-19 15:00:00</td>
-                                                        <td align="center">5</td>
-                                                        <td align="center">BD001</td>
-                                                        <td align="center">
-                                                            <input id="toggleVisibilityButton2" class="uk-button uk-button-default" type="button" value="XemTKB" />
-                                                        </td>
-                                                        <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="uk-overflow-auto">
+                                                <table class="uk-table uk-table-striped uk-table-hover">
+                                                    <thead style="font-weight: 700;">
+                                                        <tr>
+                                                            <td align="center">Mã Lớp học</td>
+                                                            <td align="center">Ngày bắt đầu</td>
+                                                            <td align="center">Ngày kết thúc</td>
+                                                            <td align="center">Sĩ số</td>
+                                                            <td align="center">Chi nhánh</td>
+                                                            <td align="center">Xem TKB</td>
+                                                            <td align="center">Đăng ký</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center">KN001_L01</td>
+                                                            <td align="center">2021-09-27 15:00:00</td>
+                                                            <td align="center">2021-12-19 15:00:00</td>
+                                                            <td align="center">7</td>
+                                                            <td align="center">HN001</td>
+                                                            <td align="center">
+                                                                <input id="toggleVisibilityButton" class="uk-button uk-button-default" type="button" value="XemTKB" />
+                                                            </td>
+                                                            <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">KN001_L02</td>
+                                                            <td align="center">2020-09-27 15:00:00</td>
+                                                            <td align="center">2020-12-19 15:00:00</td>
+                                                            <td align="center">5</td>
+                                                            <td align="center">BD001</td>
+                                                            <td align="center">
+                                                                <input id="toggleVisibilityButton2" class="uk-button uk-button-default" type="button" value="XemTKB" />
+                                                            </td>
+                                                            <td align="center"><a class="uk-button uk-button-default" href="page-catalog.html">Đăngký<img class="uk-margin-small-left"></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                        <div class="uk-width-1-5">
-                                            <table id="displaytable" style="display:none" class="uk-table uk-table-striped">
-                                                <thead style="font-weight: 700;">
-                                                    <tr>
-                                                        <td align="center">Thứ</td>
-                                                        <td class="uk-table-expand" align="center">Giờ bắt đầu</td>
-                                                        <td class="uk-table-expand" align="center">Giờ kết thúc</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center">3</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">5</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">7</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <table id="displaytable2" style="display:none;margin-top: 0;padding:0;" class="uk-table uk-table-striped">
-                                                <thead style="font-weight: 700;">
-                                                    <tr>
-                                                        <td align="center">Thứ</td>
-                                                        <td class="uk-table-expand" align="center">Giờ bắt đầu</td>
-                                                        <td class="uk-table-expand" align="center">Giờ kết thúc</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center">2</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">4</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">6</td>
-                                                        <td align="center">17h</td>
-                                                        <td align="center">19h</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-overflow-auto">
+                                                <table id="displaytable" style="display:none" class="uk-table uk-table-striped">
+                                                    <thead style="font-weight: 700;">
+                                                        <tr>
+                                                            <td align="center">Thứ</td>
+                                                            <td class="uk-table-small" align="center">Giờ bắt đầu</td>
+                                                            <td class="uk-table-small" align="center">Giờ kết thúc</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center">3</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">5</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">7</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table id="displaytable2" style="display:none;margin-top: 0;padding:0;" class="uk-table uk-table-striped">
+                                                    <thead style="font-weight: 700;">
+                                                        <tr>
+                                                            <td align="center">Thứ</td>
+                                                            <td class="uk-table-small" align="center">Giờ bắt đầu</td>
+                                                            <td class="uk-table-small" align="center">Giờ kết thúc</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center">2</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">4</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">6</td>
+                                                            <td align="center">17h</td>
+                                                            <td align="center">19h</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="section-title">
-                                        <div class="uk-h2">Danh sách giáo trình được sử dụng</div>
-                                    </div>
-                                    <table class="uk-table uk-table-divider uk-table-hover">
-                                        <thead>
-                                            <tr>
-                                                <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
-                                                <th class="uk-table-expand">Tên giáo trình</th>
-                                                <th class="uk-width-small">Năm xuất bản</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <!-- <td>KN001_GT01</td> -->
-                                                <td>Tài liệu độc quyền</td>
-                                                <td>2021</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="uk-grid uk-grid-divider" data-uk-grid-match>
-                                        <div>
-                                            <div class="section-title">
-                                                <div class="uk-h2">Danh sách giáo viên tham gia giảng dạy</div>
-                                            </div>
-                                            <table class="uk-table uk-table-divider uk-table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
-                                                        <th class="uk-table-expand">Tên Trợ giảng</th>
-                                                        <th class="uk-width-small">Email</th>
-                                                        <th class="uk-table-shrink">Số điện thoại</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Bùi Công Anh Tùng</td>
-                                                        <td>tung_buin@gmail.com</td>
-                                                        <td>0378454652</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <div class="uk-overflow-auto">
+                                        <div class="section-title">
+                                            <div class="uk-h2">Danh sách giáo trình được sử dụng</div>
                                         </div>
-                                        <div>
-                                            <div class="section-title">
-                                                <div class="uk-h2">Danh sách trợ giảng tham gia hỗ trợ</div>
+                                        <table class="uk-table uk-table-divider uk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
+                                                    <th class="uk-table-expand">Tên giáo trình</th>
+                                                    <th class="uk-width-small">Năm xuất bản</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <!-- <td>KN001_GT01</td> -->
+                                                    <td>Tài liệu độc quyền</td>
+                                                    <td>2021</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="uk-grid uk-grid-divider" data-uk-grid-match>
+                                        <div class="uk-width-1-2">
+                                            <div class="uk-overflow-auto">
+                                                <div class="section-title">
+                                                    <div class="uk-h2">Danh sách giáo viên tham gia giảng dạy</div>
+                                                </div>
+                                                <table class="uk-table uk-table-divider uk-table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
+                                                            <th class="uk-table-expand">Tên</th>
+                                                            <th class="uk-width-small">Kinh nghiệm</th>
+                                                            <th class="uk-table-shrink">Trình độ</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Huyền Trang</td>
+                                                            <td>7 năm</td>
+                                                            <td>Thạc sĩ Ngôn ngữ học</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <table class="uk-table uk-table-divider uk-table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
-                                                        <th class="uk-table-expand">Tên giáo viên</th>
-                                                        <th class="uk-width-small">Email</th>
-                                                        <th class="uk-table-shrink">Số điện thoại</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Nguyễn Huyền Trang</td>
-                                                        <td>trang.huyen_nguyen@gmail.com</td>
-                                                        <td>0945112451</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        </div>
+                                        <div class="uk-width-1-2">
+                                            <div class="uk-overflow-auto">
+                                                <div class="section-title">
+                                                    <div class="uk-h2">Danh sách trợ giảng tham gia hỗ trợ</div>
+                                                </div>
+                                                <table class="uk-table uk-table-divider uk-table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <!-- <th class="uk-table-shrink">Mã Giáo trình</th> -->
+                                                            <th class="uk-table-expand">Tên</th>
+                                                            <th class="uk-width-small">Kinh nghiệm</th>
+                                                            <th class="uk-table-shrink">Trình độ</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bùi Công Anh Tùng</td>
+                                                            <td>12 lớp</td>
+                                                            <td>IELST 7.0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
 
                                         </div>
                                     </div>
