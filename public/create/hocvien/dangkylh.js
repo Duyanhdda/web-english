@@ -117,7 +117,9 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
         fireSweetAlert();
         table = $('.giaotrinhofkh').DataTable();
         table.row($(this).parents('tr')).remove().draw();
-        window.location.replace("http://localhost:3000/dangkylh");
+        setTimeout(function () {
+          window.location.href = "http://localhost:3000/dangkylh"; //will redirect to your blog page (an ex: blog.html)
+       }, 2000);
       }
     });
   });
@@ -146,7 +148,9 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
             fireSweetAlert();
           table = $('.giaotrinhofkh').DataTable();
           table.row($(this).parents('tr')).remove().draw();
-          window.location.replace("http://localhost:3000/dangkylh");
+          setTimeout(function () {
+            window.location.href = "http://localhost:3000/dangkylh"; //will redirect to your blog page (an ex: blog.html)
+         }, 2000);
         }
       });
     });
@@ -181,7 +185,9 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
                 tkb+= " Giờ <br>";
               }
             }
-    
+            var checkhientai ;
+            if(malophochientai == data.list[0][i].MaLH) checkhientai = 'Lớp hiện tại'
+            else {checkhientai='chọn'}
             table.row
               .add([
                 `<center><td class="top"> ${data.list[0][i].MaLH}  </td></center>`,
@@ -190,7 +196,7 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
                 `<center><td> ${tkb}</td></center>`,
                 `<center><td> ${data.list[0][i].Siso}</td></center>`,
                 `<center><td> ${data.list[0][i].chinhanhMaCN}</td></center>`,
-                `<center><td> <button type="button" class="dangkylh btn btn-primary" data-malophochientai=${malophochientai} data-malh=${data.list[0][i].MaLH} data-makh=${data.list[0][i].khoahocMaKH}> chọn </button></td></center>`,
+                `<center><td> <button type="button" class="dangkylh btn btn-primary" data-malophochientai=${malophochientai} data-malh=${data.list[0][i].MaLH} data-makh=${data.list[0][i].khoahocMaKH}> ${checkhientai} </button></td></center>`,
               ])
               .draw(false);
           }
@@ -223,6 +229,9 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
                 tkb+= " Giờ <br>";
               }
             }
+            var checkhientai ;
+            if(malophochientai == data.list[0][i].MaLH) checkhientai = 'Lớp hiện tại'
+            else {checkhientai='chọn'}
             t.row
               .add([
                 `<center><td class="top"> ${data.list[0][i].MaLH}  </td></center>`,
@@ -231,7 +240,7 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
                 `<center><td> ${tkb}</td></center>`,
                 `<center><td> ${data.list[0][i].Siso}</td></center>`,
                 `<center><td> ${data.list[0][i].chinhanhMaCN}</td></center>`,
-                `<center><td> <button type="button" class="chuyenlop btn btn-primary"data-malophochientai=${malophochientai} data-malophochcuyenden=${data.list[0][i].MaLH}  }> chọn </button></td></center>`,
+                `<center><td> <button type="button" class="chuyenlop btn btn-primary"data-malophochientai=${malophochientai} data-malophochcuyenden=${data.list[0][i].MaLH}  }> ${checkhientai} </button></td></center>`,
               ])
               .draw(false);
           }
@@ -249,11 +258,18 @@ $('.giaotrinhofkh').on('click', '.dangkylh', function (e) {
       $.post('/dangkylh/chuyenlophoc', { MaLH: MaLH , Malophientai:Malophientai}, function (data) {
         console.log(data.Result);
         if (data.Result != 'Succesfully!') {
-          Chuyenthatbai();
+          setTimeout( Chuyenthatbai(), 1000);
+         
         } else {
-          Chuyenthanhcong();
+         
           table = $('.gv_th_Modal').DataTable();
           table.row($(this).parents('tr')).remove().draw();
+
+          Chuyenthanhcong();
+          setTimeout(function () {
+            window.location.href = "http://localhost:3000/dangkylh"; //will redirect to your blog page (an ex: blog.html)
+         }, 2000);
+          
         }
       });
     });

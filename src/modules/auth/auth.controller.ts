@@ -45,7 +45,7 @@ async login(@Req() req: Request, @Res() res: Response) {
     // //Cookies
     const accessToken = this.jwtService.sign(signedInfo);
     res.cookie('LB', accessToken);
-    res.redirect('main');
+    res.redirect('hocviencourselist');
     // //End Cookies
     // //Roles 
     // if (process.env["ADMIN"].split(";").some((e) => e.trim() == email.trim())) {
@@ -80,10 +80,10 @@ async login(@Req() req: Request, @Res() res: Response) {
     const accessToken = this.jwtService.sign(user);
     res.cookie('LB', accessToken); 
     if (!getbyemail){
-      return res.redirect('/updateinfo');
+      return res.redirect('/updatehocvien');
     }
     else
-        return res.redirect('/main');
+        return res.redirect('/hocviencourselist');
   }
 
   @Get('logout')
