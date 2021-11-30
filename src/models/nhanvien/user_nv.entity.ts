@@ -1,5 +1,5 @@
 import { Nhanvien } from './nhanvien.entity';
-import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryColumn } from 'typeorm';
+import { Column, Entity, Index, JoinColumn, ManyToOne, OneToOne, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class user_nv {
@@ -9,9 +9,13 @@ export class user_nv {
   @Column()
   password: string;
 
-  @OneToOne(() => Nhanvien, { primary: true,
+  @Column()
+  role: number;
+
+  @OneToOne(() => Nhanvien, { 
     onDelete: "CASCADE",
     onUpdate: "CASCADE",})
+  @Index({ unique: true })
   @JoinColumn()
   nhanvien: Nhanvien;
 }

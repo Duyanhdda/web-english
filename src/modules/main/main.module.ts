@@ -1,3 +1,5 @@
+import { DslophocController } from './giangvien_trogiang/dslophoc_info.controller';
+import { GiangvienmainController } from './giangvien_trogiang/maingv.controller';
 import { BlognextController } from './blognext.controller';
 import { Khoahoc } from './../../models/khoahoc/khoahoc.entity';
 
@@ -25,14 +27,19 @@ import { BlogController } from './blog.controller';
 import { ContactController } from './contact.controller';
 import { BlogprevController } from './blogprev.controller';
 import { BlogarticleController } from './blogarticle.controller';
+import { CapnhatlhController } from './quanlygiaoduc/capnhatlh.controller';
+import { GiangviendskhController } from './giangvien_trogiang/gv_courselist.controller';
+import { Userservice } from 'src/services/user.service';
+import { user_nv } from 'src/models/nhanvien/user_nv.entity';
+
 
 @Module({
-    imports: [TypeOrmModule.forFeature([Hocvien,Khoahoc])],
-    providers: [hocvienService,FunctionService,KhoahocService],
+    imports: [TypeOrmModule.forFeature([Hocvien,Khoahoc,user_nv])],
+    providers: [hocvienService,FunctionService,KhoahocService,Userservice],
     controllers: [MainController,UpdateinfoController,RegisterController,CourselistController,
     CapnhatkhController,QlgdmainController,CapnhatgtController,HocviencourselistController,CatalogController,
     DangkylhController,ProductController,BranchController,BlogController,ContactController,BlognextController,BlogprevController,
-    BlogarticleController]
+    BlogarticleController,CapnhatlhController,GiangvienmainController,GiangviendskhController,DslophocController]
 })
   
 export class MainModule { }

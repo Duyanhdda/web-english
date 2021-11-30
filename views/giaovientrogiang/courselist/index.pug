@@ -7,7 +7,7 @@ block content
       .container-fluid
         .row.mb-2
           .col-sm-6
-            h1 Update course
+            h1 Course list
           .col-sm-6
             ol.breadcrumb.float-sm-right
               li.breadcrumb-item
@@ -47,9 +47,9 @@ block content
                                         td= khoahoc.Yeucautrinhdo
                                         td.text-center
                                             btn.btn-search.btn.btn-primary.btn-xs(style="margin-right: 5px" ,data-MaKH=khoahoc.MaKH ,data-Ten=khoahoc.Ten ,data-Hocphi=khoahoc.Hocphi, data-Thoiluong=khoahoc.Thoiluong data-Trangthai=khoahoc.Trangthai data-Gioihansiso=khoahoc.Gioihansiso data-Yeucautrinhdo=khoahoc.Yeucautrinhdo data-Noidung=khoahoc.Noidung )
-                                              i.icon-search.menu-icon
+                                                i.icon-search.menu-icon
                                             btn.btn-search2.btn.btn-primary.btn-xs(style="margin-right: 5px" ,data-MaKH=khoahoc.MaKH  )
-                                              i.icon-book.menu-icon
+                                                i.icon-book.menu-icon
                                             #Addsudung.modal.fade(role='dialog' aria-labelledby='Addsudung' aria-hidden='true')
                                                 .modal-dialog.modal-lg
                                                     .modal-content
@@ -69,10 +69,14 @@ block content
                                                                         table.gv_th_Modal.table.table-bordered.table-striped
                                                                             thead
                                                                                 tr.text-center
+                                                                                th Mã lớp học
                                                                                 th Mã nhân viên
                                                                                 th Tên nhân viên
                                                                                 th Giáo viên
                                                                                 th Trợ giảng
+ 
+
+
                                             #giaotrinh.modal.fade(role='dialog' aria-labelledby='giaotrinh' aria-hidden='true')
                                                 .modal-dialog.modal-lg
                                                     .modal-content
@@ -94,12 +98,11 @@ block content
                                                                                 tr.text-center
                                                                                     th Mã giáo trình
                                                                                     th Tên giáo trình
-                                                                                    th Năm xuất bản    
- 
+                                                                                    th Năm xuất bản
 
-                                                            //-     btn.btn-delete.btn.btn-danger.btn-xs(style="margin-right: 5px", data-id = student.id)
 
-//- block style 
-//-     link(rel="stylesheet", href="/create/khoahoc/index.css")
+
+block style 
+    link(rel="stylesheet", href="/create/giangviendskh/index.css")
 block script 
-    script(src="/create/hocvien/courselist.js")
+    script(src="/create/giangviendskh/index.js")

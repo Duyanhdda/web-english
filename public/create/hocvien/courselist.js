@@ -50,3 +50,31 @@ $(".btn-search").click(function (e) {
     $('#Addsudung').modal('show');
 });
 
+$('.btn-search2').click(function (e) {
+    var ma = $(this).data("makh");
+    $("#giaotrinh input[name='MaKH']").val(ma);
+
+    $.post('/capnhatgt/getAllgt', { MaKH: ma }, function (data) {
+        var t = $('.giaotrinhofkh').DataTable({
+            "searching": false, // false to disable search (or any other option)
+            "bDestroy": true
+            });
+        t.rows().remove().draw();
+
+      if ($.fn.dataTable.isDataTable('.giaotrinhofkh')) {
+        table = $('.giaotrinhofkh').DataTable();
+        table.clear().draw();
+        for (var i = 0; i < data[0].length; i++) {
+          table.row
+            .add([
+              `<center><td> ${data[0][i].MaGT}  </td></center>`,
+              `<center><td> ${data[0][i].Ten}</td></center>`,
+              `<center><td> ${data[0][i].Namxuatban}</td></center>`,
+            ])
+            .draw(false);
+        }
+      } 
+    });
+    $('#giaotrinh').modal('show');
+  });
+

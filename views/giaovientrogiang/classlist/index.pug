@@ -1,0 +1,105 @@
+extends ../layout.pug
+
+block content
+  .content-wrapper(style='padding-top:0px;')
+    // Content Header (Page header)
+    section.content-header
+      .container-fluid
+        .row.mb-2
+          .col-sm-6
+            h1 List of classes in charge
+          .col-sm-6
+            ol.breadcrumb.float-sm-right
+              li.breadcrumb-item
+                a(href='http://localhost:3000/home') Home
+              li.breadcrumb-item.active class list
+      // /.container-fluid
+    // Main content
+    section.content
+      .container-fluid
+        .row
+          .col-12             
+            .card
+              // /.card-header
+              .card-body
+                .row
+                    .card-body
+                        table#TAB-students.table.table-bordered.table-striped
+                            thead
+                                tr.text-center
+                                    th Mã lớp học
+                                    th Ngày bắt đầu
+                                    th Ngày kết thúc
+                                    th Sĩ số
+                                    th Chi nhánh
+                                    th Khóa học
+                                    th Xem danh sách GT/TG
+
+                            tbody 
+                                each lophoc in data
+                                    tr.text-center
+                                        td= lophoc.MaLH
+                                        td= moment(lophoc.Ngaybatdau).format('ll')
+                                        td= moment(lophoc.Ngayketthuc).format('ll')
+                                        td= lophoc.Siso
+                                        td= lophoc.chinhanhMaCN
+                                        td= lophoc.khoahocMaKH
+                                        td.text-center
+                                            btn.btn-search2.btn.btn-primary.btn-xs(style="margin-right: 5px" ,data-MaKH=lophoc.MaKH  )
+                                                i.icon-search.menu-icon
+                                            //- #Addsudung.modal.fade(role='dialog' aria-labelledby='Addsudung' aria-hidden='true')
+                                            //-     .modal-dialog.modal-lg
+                                            //-         .modal-content
+                                            //-             .modal-header
+                                            //-                 h5.modal-title Danh sách giáo viên và trợ giảng
+                                            //-                 button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                            //-                     span(aria-hidden='true') &times;
+                                            //-             form
+                                            //-                 .modal-body
+                                            //-                     .row 
+                                            //-                         .col-md-12
+                                            //-                             .form-group
+                                            //-                                 label Mã khóa học
+                                            //-                                 input.form-control(type='text'  name = 'MaKH', readonly)
+                                            //-                     .row
+                                            //-                         .col-md-12
+                                            //-                             table.gv_th_Modal.table.table-bordered.table-striped
+                                            //-                                 thead
+                                            //-                                     tr.text-center
+                                            //-                                     th Mã lớp học
+                                            //-                                     th Mã nhân viên
+                                            //-                                     th Tên nhân viên
+                                            //-                                     th Giáo viên
+                                            //-                                     th Trợ giảng
+ 
+
+
+                                            //- #giaotrinh.modal.fade(role='dialog' aria-labelledby='giaotrinh' aria-hidden='true')
+                                            //-     .modal-dialog.modal-lg
+                                            //-         .modal-content
+                                            //-             .modal-header
+                                            //-                 h5.modal-title Danh sách giáo trình sử dụng
+                                            //-                 button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                            //-                     span(aria-hidden='true') &times;
+                                            //-             form
+                                            //-                 .modal-body
+                                            //-                     .row 
+                                            //-                         .col-md-12
+                                            //-                             .form-group
+                                            //-                                 label Mã khóa học
+                                            //-                                 input.form-control(type='text'  name = 'MaKH', readonly)
+                                            //-                     .row(style="margin-top:30px;")
+                                            //-                         .col-12 
+                                            //-                             table.giaotrinhofkh.table.table-bordered.table-striped
+                                            //-                                 thead
+                                            //-                                     tr.text-center
+                                            //-                                         th Mã giáo trình
+                                            //-                                         th Tên giáo trình
+                                            //-                                         th Năm xuất bản
+
+
+
+block style 
+    link(rel="stylesheet", href="/create/giangviendskh/index.css")
+block script 
+    script(src="/create/giangviendskh/index.js")

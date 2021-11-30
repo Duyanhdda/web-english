@@ -25,22 +25,8 @@ export class CapnhatkhController {
             data: data[0]
         }
         return viewBag;
-
-
-
-
-
-        // var picture: string = req.user["picture"] as string;
-        // var email: string = req.user["email"] as string;
-        // if(!picture) picture = "/images/faces/face11.jpg";
-        // const data = await this.functionService.getAllkhoahoc('KN001');
-        // console.log(data);
-        // const viewBag = {
-        //     picture: picture,
-        //     data: data
-        // }
-        // return viewBag;
     }
+
     @Post("/update")
     @UseGuards(AuthGuard('jwt'))
     async edit(@Req() req: Request,@Res() res: Response, @Body() khoahoc: any) {
