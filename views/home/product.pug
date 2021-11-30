@@ -121,7 +121,7 @@ html(lang='en')
                       .product-full-card__gallery-box
                         ul.uk-slideshow-items.uk-child-width-1-1
                           li.uk-flex.uk-flex-center.uk-flex-middle
-                            img(src='assets/img/catalog/KN001.jpeg' alt='KN001')
+                            img(src=data.url style='width:100%;height=100%;' alt=data.MaKH)
                         .product-full-card__whish
                           i.fas.fa-heart
                         .product-full-card__type.spicy
@@ -130,38 +130,35 @@ html(lang='en')
                 div
                   .product-full-card__content
                     .product-full-card__not-active
-                      .product-full-card__title(style='font-size: 30px;') Anh Ngữ Ứng Dụng English Hub
-                      .product-full-card__desc(style='height: 80px; margin-top: 30px;')
-                        | Giá trị cốt lõi của English Hub là giáo trình cân bằng 4 kỹ năng Anh ngữ với kết quả học tập rõ ràng thông qua các bài học chủ đề thú vị và ngôn ngữ được trình bày bằng video đậm chất "giải trí".
+                      .product-full-card__title(style='font-size: 30px;')= data.Ten
+                      .product-full-card__desc(style='height: 80px; margin-top: 30px;')=data.Noidung
                       .product-full-card__select(style='height: 180px;')
                         .select-box
                           ul
                             li
                               label(style='margin-left: 8px;')
-                                span 30 người/lớp
+                                span=data.Gioihansiso+ " " + "người/lớp"
                             li
                               label
-                                span Opening
+                                span= "Trạng thái: "+data.Trangthai
+                        .select-box
+                          ul
+                            li
+                              label 
+                                span= "Thời lượng: " + data.Thoiluong + " tuần"
                         .select-box
                           ul
                             li
                               label
-                                span Thời lượng: 12 tuần
-                        .select-box
-                          ul
-                            li
-                              label
-                                span Yêu cầu (IELTS): không
+                                span= "Yêu cầu (IELTS):" +( (data.Yeucautrinhdo!=0)? data.Yeucautrinhdo : " không")
                   .product-full-card__info
                     .product-full-card__price
                       span Học Phí: 
-                      span.value 10.000.000
+                      span.value=data.Hocphi
                     .product-full-card__btns
                       a.uk-button(href='#Class_list') ĐĂNG KÝ NGAY
                       a.uk-button(style='margin-left: 10px; background-color: grey;' href='https://www.efset.org/vi/' target='_blank' rel='noopener noreferrer') KIỂM TRA TRÌNH ĐỘ
                   .product-full-card__category
-                    span Phân loại:  
-                    a(href='#!') Khóa kỹ năng
                   .product-full-card__share
                     span Share This:
                     ul

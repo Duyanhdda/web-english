@@ -31,6 +31,9 @@ import { CapnhatlhController } from './quanlygiaoduc/capnhatlh.controller';
 import { GiangviendskhController } from './giangvien_trogiang/gv_courselist.controller';
 import { Userservice } from 'src/services/user.service';
 import { user_nv } from 'src/models/nhanvien/user_nv.entity';
+import { DshocvienController } from './giangvien_trogiang/dshocvien_phutrach.controller';
+import { ThoikhoabieuController } from './giangvien_trogiang/tkb.controller';
+import { ChinhanhController } from './hocvien/chinhanh.controller';
 
 
 @Module({
@@ -39,7 +42,8 @@ import { user_nv } from 'src/models/nhanvien/user_nv.entity';
     controllers: [MainController,UpdateinfoController,RegisterController,CourselistController,
     CapnhatkhController,QlgdmainController,CapnhatgtController,HocviencourselistController,CatalogController,
     DangkylhController,ProductController,BranchController,BlogController,ContactController,BlognextController,BlogprevController,
-    BlogarticleController,CapnhatlhController,GiangvienmainController,GiangviendskhController,DslophocController]
+    BlogarticleController,CapnhatlhController,GiangvienmainController,GiangviendskhController,DslophocController,DshocvienController,ThoikhoabieuController,
+    ChinhanhController]
 })
   
 export class MainModule { }

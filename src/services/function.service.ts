@@ -113,6 +113,58 @@ export class FunctionService {
         return await this.functionRepository.query(
             "CALL DanhsachLH_phutrach_Thongtinchitiet_LH('"+MaNV +"','" + hientai +"')");
     }
+    
+
+    async DanhsachLH_phutrach_Thongtinchitiet_GV(MaNV: string) {
+        var hientai ="hientai";
+        return await this.functionRepository.query(
+            "CALL DanhsachLH_phutrach_Thongtinchitiet_GV('"+MaNV +"','" + hientai +"')");
+    }
+
+    async 	DanhsachLH_phutrach_Thongtinchitiet_TG(MaNV: string) {
+        var hientai ="hientai";
+        return await this.functionRepository.query(
+            "CALL 	DanhsachLH_phutrach_Thongtinchitiet_TG('"+MaNV +"','" + hientai +"')");
+    }
+
+    
+    async DanhsachHV_thuocLH_phutrach( MaLH: string,MaNV: string ) {
+        return await this.functionRepository.query(
+            "CALL 	DanhsachHV_thuocLH_phutrach('"+MaLH +"','" + MaNV +"')");
+    }
+
+    async 	Check_GV_TG(MaNV: string) {
+        var hientai ="hientai";
+        return await this.functionRepository.query(
+            "SELECT 	Check_GV_TG('"+MaNV +"')");
+    }
+   
+    async getUser(MaNV: string) {
+        return await this.functionRepository.query(
+            " SELECT * FROM user_nv WHERE user_nv.username ='"+MaNV +"'");
+    }
+    
+
+    async DanhsachLH_phutrach_Thongtinchitiet_TKB(MaNV: string) {
+        var hientai ="hientai";
+        return await this.functionRepository.query(
+            "CALL DanhsachLH_phutrach_Thongtinchitiet_TKB('"+MaNV + "','" + hientai +"')");
+    }
+
+    async getAllchinhanh() {
+        return await this.functionRepository.query(
+            "SELECT * FROM chinhanh");
+    }
+
+    async editup(MaKH: string) {
+        return await this.functionRepository.query(
+            "UPDATE `khoahoc` SET `up`=true WHERE khoahoc.MaKH='"+ MaKH + "'");
+    }
+
+    async offup(MaKH: string) {
+        return await this.functionRepository.query(
+            "UPDATE `khoahoc` SET `up`=false WHERE khoahoc.MaKH='"+ MaKH + "'");
+    }
     // async getOne(id: string , email: string ): Promise<Hocvien> {
     //     return await this.hocvienRepository.findOne(Number(id)); //Phải convert id sang number vì id của faculty là NUMBER chứ không phải là string
     // }
