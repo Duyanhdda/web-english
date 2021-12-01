@@ -13,23 +13,22 @@ import { AuthController } from './auth.controller';
 import { hocvienService } from 'src/services/hocvien.service';
 import { Hocvien } from 'src/models/hocvien/hocvien.entity';
 import { LocalStrategy } from './local.strategy';
-import { Userservice } from 'src/services/user.service';
-import { user_nv } from 'src/models/nhanvien/user_nv.entity';
 
 
 @Module({
   imports: [
     PassportModule,
     ConfigModule.forRoot(),
-    TypeOrmModule.forFeature([Hocvien,user_nv]),
+    TypeOrmModule.forFeature([Hocvien]),
     JwtModule.register({
       secret: process.env.JWT_SECRET,
       signOptions: {
         expiresIn: 60 * 30,
       },
     }),
+    TypeOrmModule.forFeature([Hocvien]),
   ],
-  providers: [JwtStrategy, GoogleStrategy,hocvienService,LocalStrategy,Userservice],
+  providers: [JwtStrategy, GoogleStrategy,hocvienService,LocalStrategy],
   controllers: [AuthController],
 })
 export class AuthModule {}

@@ -36,11 +36,14 @@ import {
   
     @Column()
     Yeucautrinhdo: number;
+<<<<<<< HEAD
 
     @Column()
     url: string;
 
     @Column()
     up: Boolean;
+=======
+>>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303
   }
   
