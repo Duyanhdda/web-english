@@ -4,6 +4,7 @@ import { Controller, Get, Render, Post, Body, Res, UseGuards, Req } from "@nestj
 import { AuthGuard } from '@nestjs/passport'; 
 import { Userservice } from 'src/services/user.service';
 import { user_nv } from 'src/models/nhanvien/user_nv.entity';
+import * as bcrypt from 'bcrypt';
 @Controller("dshopvien")
 export class DshocvienController {
     constructor (private userservice: Userservice , private functionService: FunctionService) {}
@@ -13,6 +14,12 @@ export class DshocvienController {
     @Render("giaovientrogiang/studentlist/index.pug")
     async index(@Req() req: Request, @Res() res: Response) {
         var picture: string = req.user["picture"] as string;
+
+        // var user1 = new user_nv();
+        // user1.username = "admin";
+        // const salt = await bcrypt.genSalt(15);
+        // user1.password = await bcrypt.hash("admin",salt);
+        // await this.userservice.add(user1);
 
         if(!picture) picture = "/images/faces/face11.jpg";
         const viewBag = {

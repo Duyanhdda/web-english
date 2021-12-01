@@ -25,6 +25,7 @@ head
               img(src='assets/img/logo.png' alt='logo')
             h4 Welcome to Team 2 English
             h6.font-weight-light Sign in to continue.
+            h5(style="color:red;")=message
             form.pt-3(action='/login', method='post')
               .form-group
                 input#exampleInputEmail1.form-control.form-control-lg(type='text' name = 'email' placeholder='Username')

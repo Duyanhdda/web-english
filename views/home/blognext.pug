@@ -1,333 +1,335 @@
 doctype html
-head
-  meta(charset='utf-8')
-  title 5 l&yacute; do ti&#x1EBF;ng Anh &ndash; Anh kh&aacute;c Anh &ndash; M&#x1EF9; du h&#x1ECD;c sinh c&#x1EA7;n bi&#x1EBF;t
-  meta(content='Chernyh Mihail' name='author')
-  meta(content='Spedito - All in one place' name='description')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(name='HandheldFriendly' content='true')
-  meta(name='format-detection' content='telephone=no')
-  meta(content='IE=edge' http-equiv='X-UA-Compatible')
-  link(rel='shortcut icon' href='assets/img/logoW.png' type='image/x-icon')
-  link(rel='stylesheet' href='assets/css/uikit.min.css')
-  link(rel='stylesheet' href='assets/css/main.css')
-  link(rel='stylesheet' href='assets/css/dropdown.css')
-  link#dm-light(rel='stylesheet' href='assets/css/light.css')
-// Loader
-#page-preloader
-  span.spinner.border-t_second_b.border-t_prim_a
-// Loader end
-.page-wrapper
-  header.page-header
-    .page-header__top
-      .uk-container
-        nav.uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
-          .uk-navbar-left
-            button.uk-button(type='button' data-target='#offcanvas' data-uk-toggle='' data-uk-icon='menu')
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title 5 lý do tiếng Anh – Anh khác Anh – Mỹ du học sinh cần biết
+    meta(content='Chernyh Mihail' name='author')
+    meta(content='Spedito - All in one place' name='description')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='HandheldFriendly' content='true')
+    meta(name='format-detection' content='telephone=no')
+    meta(content='IE=edge' http-equiv='X-UA-Compatible')
+    link(rel='shortcut icon' href='assets/img/logoW.png' type='image/x-icon')
+    link(rel='stylesheet' href='assets/css/uikit.min.css')
+    link(rel='stylesheet' href='assets/css/main.css')
+    link(rel='stylesheet' href='assets/css/dropdown.css')
+    link#dm-light(rel='stylesheet' href='assets/css/light.css')
+  body.page-article.dm-light
+    // Loader
+    #page-preloader
+      span.spinner.border-t_second_b.border-t_prim_a
+    // Loader end
+    .page-wrapper
+      header.page-header
+        .page-header__top
+          .uk-container
+            nav.uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
+              .uk-navbar-left
+                button.uk-button(type='button' data-target='#offcanvas' data-uk-toggle='' data-uk-icon='menu')
+                ul.uk-navbar-nav
+                  li
+                    a(href='home') TRANG CHỦ
+                  li
+                    a(href='catalog') KHÓA HỌC
+                  li
+                    a(href='branch') CHI NHÁNH
+              .uk-navbar-center
+                .logo
+                  .logo__box
+                    a(href='home')
+                      img.logo__img.logo__img--full(src='assets/img/logo.png' alt='logo')
+              .uk-navbar-right
+                ul.uk-navbar-nav
+                  li
+                    a(href='home') VỀ CHÚNG TÔI
+                  li
+                    a(href='blog') TIN TỨC
+                  li
+                    a(href='contacts') LIÊN HỆ
+        .page-header__bottom
+          .uk-container
+            .uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
+              .uk-navbar-left
+                div
+                  .block-with-phone
+                    img(src='assets/img/icons/delivery.svg' alt='delivery' data-uk-svg='')
+                    div
+                      span Liên hệ ngay với chúng tôi
+                      a(href='tel:13205448749') 0394143031
+              .uk-navbar-center
+              .uk-navbar-right
+                .other-links
+                  ul.other-links-list
+                    li
+                      a(href='#modal-full' data-uk-toggle='')
+                        span(data-uk-icon='search')
+                    li
+                      a(href='login')
+                        span(data-uk-icon='user')
+                    li
+                      a(href='cart')
+                        span(data-uk-icon='cart')
+      main.page-main
+        .section-first-screen
+          .first-screen__bg(style='background-image: url(assets/img/pages/contacts/bg12.jpg)')
+          .first-screen__content
+            .uk-container
+              nav.category-nav
+                nav.uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
+                  ul.uk-navbar-nav
+                    li
+                      a(href='catalog')
+                        .nav-item
+                          span.nav-item__icon
+                            img(src='assets/img/icons/menu/thieunhi.png' alt='face care' data-uk-svg='')
+                          span.nav-item__text Khóa thiếu nhi
+                    li
+                      a(href='catalog')
+                        .nav-item
+                          span.nav-item__icon
+                            img(src='assets/img/icons/menu/thieunien.png' alt='hair care' data-uk-svg='')
+                          span.nav-item__text Khóa thiếu niên
+                    li
+                      a(href='catalog')
+                        .nav-item
+                          span.nav-item__icon
+                            img(src='assets/img/icons/menu/onthi.png' alt='lips care' data-uk-svg='')
+                          span.nav-item__text Khóa ôn thi
+                    li
+                      a(href='catalog')
+                        .nav-item
+                          span.nav-item__icon
+                            img(src='assets/img/icons/menu/kynang.png' alt='body care' data-uk-svg='')
+                          span.nav-item__text Khóa kỹ năng
+              .first-screen__box
+                h2.first-screen__title Latest News
+                .first-screen__breadcrumb
+                  ul.uk-breadcrumb
+                    li
+                      a(href='/') Home
+                    li
+                      span News Blog
+                    li
+                      span Full post
+        .page-content
+          .uk-margin-large-top.uk-container.uk-container-small
+            article.article-full
+              .article-full__info
+                .article-full__author
+                  i.fas.fa-user
+                  span By Tom
+                .article-full__category
+                  i.fas.fa-folder-open
+                  span Posted in Language
+                .article-full__date
+                  i.fas.fa-calendar-alt
+                  span Nov 30, 2020
+                .article-full__comments
+                  i.fas.fa-comment
+                  span 20
+              .article-full__image
+                a(href='blogarticle')
+                  img(src='assets/img/blog/eng-blog-next-1.jpg' alt='img-article')
+              .article-full__content
+                h1 5 lý do tiếng Anh – Anh khác Anh – Mỹ du học sinh cần biết
+                p
+                  | Anh và Mỹ có thể chia sẻ cùng một ngôn ngữ – tiếng Anh, nhưng chẳng có mấy sự tương đồng trong cách phát âm khi một người Anh và người Mỹ nói chuyện với nhau cả. Đúng vậy, tất cả mọi thứ từ A đến Z. Các từ được viết giống nhau
+                  | nhưng nghe lại hoàn toàn khác nhau khi phát âm. Có cả một đại dương khác biệt về ngôn ngữ (cùng với một đại dương địa lý thực sự) giữa hai quốc gia nói Tiếng Anh lớn nhất thế giới này. Nhưng đừng lo lắng! Nếu bạn đang du
+                  | học Anh ở London và muốn biết điều gì khiến giọng của bạn khác biệt so với người bạn của bạn đang du học Mỹ tại New York, đây là những điều bạn cần biết.
+                h3 1. Tiếng Anh – Mỹ thực sự lâu đời hơn
+                p
+                  | Nếu bạn đang du học Anh thì đừng nói với người Anh thế nhé. Vì chính Anh đã sản sinh ra nước Mỹ mà chúng ta biết đến ngày nay. Nhưng thực tế điều này hoàn toàn là sự thực. Khi những người Anh đầu tiên giương buồm đến Mỹ định
+                  | cư, họ đã mang theo một ngôn ngữ phổ dụng. Dựa trên lối nói rhotic (khi bạn phát âm chữ r trong một từ). Trong khi đó, ở các thành phố thịnh vượng phía Nam Vương quốc Anh, những người ở tầng lớp cao cấp luôn muốn có cách
+                  | nào đó để phân biệt họ với những thường dân khác. Vì vậy, họ bắt đầu thay đổi lối nói rhotic thành cách phát âm r nhẹ. Nói các từ như winter là “win-tuh” thay vì “win-terr”. Tất nhiên, những người này rất sang trọng và
+                  | mọi người đều muốn bắt chước họ. Vì vậy cách nói mới này – cách mà người Anh hiện nay coi là Cách phát âm được công nhận – đã lan toả phần còn lại của miền Nam nước Anh. Điều đó cũng giải thích tại sao nhiều nơi bên ngoài
+                  | miền Nam nước Anh vẫn còn sử dụng cách nói rhotic như là một phần giọng địa phương của họ. Về cơ bản, nếu bạn du học Anh và nói tiếng Anh của London, thì tức là cách nói của bạn nghe có vẻ quý tộc hơn đấy. Chiến thắng.
+                h3 2. Tiếng Anh phát âm nghe giống tiếng Pháp hơn
+                p
+                  | Tiếng Pháp đã ảnh hưởng đến tiếng Anh nhiều hơn nhiều so với những gì người Anh tưởng tượng. (Bởi thế sinh viên du học Anh cũng bị ảnh hưởng khá nhiều của tiếng Pháp đấy nhé).
+                p
+                  | Lần đầu tiên tiếng Pháp ảnh hưởng đến tiếng Anh là khi nhà vua William xâm chiếm nước Anh vào thế kỷ 11 (tìm hiểu thêm về lịch sử Tiếng Anh tại đây). Họ mang theo Tiếng Pháp Norman và biến nó trở thành một ngôn ngữ quý tộc
+                  | – được sử dụng trong các trường học, toà án, đại học, và ở tầng lớp thượng lưu. Nó không tồn tại mãi. Nhưng thay vào đó phát triển thành Tiếng Anh Trung cổ, là một sự pha trộn của các ảnh hưởng ngôn ngữ trong suốt thời
+                  | gian đó. Lần thứ hai là trong suốt những năm 1700, khi mà việc sử dụng các từ và cách phát âm phong cách Pháp trở thành xu hướng sành điệu ở Anh.
+                p
+                  | Tất nhiên, người Mỹ đã sống cuộc sống của mình ở bên kia bờ Đại Tây Dương và không tham gia vào xu hướng này. Đó là lý do tại sao so với tiếng Anh Mỹ, tiếng Anh Anh lại có nhiều sự tương đồng ngôn ngữ với tiếng Pháp hơn. Và
+                  | điều này phải chăng cũng lý giải nỗi ám ảnh của người Anh với bánh sừng bò. Hoặc có thể chỉ với mình tôi thôi.
+                h3 3. Cách viết kiểu Mỹ được phát minh như một dạng phản kháng cách viết kiểu Anh
+                p
+                  | Từ điển Mỹ và Anh rất khác nhau. Bởi chúng được biên soạn bởi hai tác giả rất khác nhau với hai quan điểm không đồng nhất về ngôn ngữ. Từ điển của Anh được biên soạn bởi các học giả từ London. (Vì một vài lý do không phải là
+                  | Oxford). Những người này chỉ muốn thu thập tất cả các từ Tiếng Anh phổ biến. Trong khi đó, từ điển của Mỹ lại được thực hiện bởi một người biên soạn từ điển có tên là Noah Webster. Webster muốn cách viết của Mỹ không chỉ
+                  | đơn giản hơn mà còn phải khác biệt với cách viết của người Anh. Cũng như cái cách mà người Mỹ thể hiện sự độc lập từ luật lệ của Anh trước đây. Ông đã bỏ chữ u trong các từ như colour và honour – cách viết được phát triển
+                  | từ ảnh hưởng của Pháp lên nước Anh. Để biến chúng thành color và honor. Ông cũng làm tương tự với các từ kết thúc bằng –ise và biến chúng thành –ize. Bởi vì ông cho rằng cách viết Anh Mỹ nên phản ánh đúng cái cách mà người
+                  | Mỹ phát âm từ đó. Thêm vào đó, z là chữ cái thú vị hơn khi viết. Vậy đấy.
+                p
+                  | Vậy nên những bạn sinh viên du học Anh và du học Mỹ cũng sử dụng những tài liệu ngôn ngữ như từ điển hay giáo trình cũng sẽ có cách viết vô cùng khác nhau. Và đương nhiên cách nói hay sử dụng tiếng Anh hàng ngày của họ cũng
+                  | khác biệt rất lớn.
+                h3 4. Người Mỹ thích bỏ hoàn toàn các từ. (Sinh viên du học Mỹ cũng vậy)
+                p
+                  | Đôi khi cũng có những sự khác biệt trong tiếng Anh Mỹ khiến người Anh không thể hiểu nổi. Như khi người Mỹ bỏ toàn bộ các động từ trong một câu. Sinh viên du học Mỹ cũng thường có thói quen như vậy. Khi nói với ai đó rằng họ
+                  | sẽ viết thư cho họ. Họ sẽ nói là “I’ll write them”. Khi bạn hỏi một người Mỹ là liệu rằng họ có muốn đi mua sắm hay không. Họ có thể sẽ chỉ nói “I could”. Ở Anh, cách trả lời kiểu này nghe thực sự kỳ quặc, vì họ sẽ nói
+                  | “I’ll write to you” và “I could go”. Bỏ động từ có lẽ bởi vì người Mỹ muốn nói nhanh hơn. Hoặc có thể vì người Anh chỉ thích viết chính xác những gì họ nói. Không ai đúng hay sai ở đây cả. Vậy nên đừng cho rằng các bạn
+                  | sinh viên du học Mỹ đã học một cách nói không đúng nhé.
+                h3 5. Hai thứ tiếng Anh này được vay mượn từ nhiều ngôn ngữ khác nhau
+                p
+                  | Rõ ràng là tiếng Anh Anh và Anh Mỹ đã phát triển theo 2 hướng khác nhau khi bạn xem xét các ảnh hưởng văn hoá đã tác động biệt lập tới mỗi kiểu Tiếng Anh đó. Cũng như việc làm thế nào họ đã mượn từ của các ngôn ngữ đó. Vì vài
+                  | lý do, điều này lại rất phổ biến đối với các từ nói về thực phẩm. Chẳng hạn từ coriander (Anh Anh, mượn từ Tiếng Pháp). Và cilantro (Anh Mỹ, mượn từ Tiếng Tây Ban Nha) đều có nghĩa là rau mùi. Và aubergine (Anh Anh, mượn
+                  | từ Tiếng Ả Rập). Và eggplant (Anh Mỹ, gọi như vậy là vì nó trông giống một quả trứng màu tím) đều có nghĩa là cà tím. Còn rất nhiều ví dụ khác. Nhưng thôi, điều quan trọng là sử dụng đúng từ ở đúng quốc gia mà bạn đang
+                  | du học. Sau cùng, bạn không muốn hỏi xin người Anh vài lá nhôm (aluminium foil) và lại phát âm là aloo-minnum. Cũng như không muốn viết cho người Mỹ là “This is my favourite colour!” phải không?
+                .article-full__bottom
+                  .article-full__tags
+                    div
+                      i.fas.fa-tags
+                      strong Related Tags
+                    span HỌC TIẾNG ANH, ANH, US
+                  .article-full__share
+                    div
+                      strong Share This
+                      i.fas.fa-share-alt
+                    ul
+                      li
+                        a(href='#!')
+                          i.fab.fa-twitter
+                      li
+                        a(href='#!')
+                          i.fab.fa-facebook-f
+                      li
+                        a(href='#!')
+                          i.fab.fa-google-plus-g
+                      li
+                        a(href='#!')
+                          i.fab.fa-pinterest-p
+                .article-full__nav
+                  ul.articles-nav-list
+                    li.articles-nav-item
+                      a.articles-nav-item__link(href='blogprev')
+                        .articles-nav-item__img
+                          img(src='assets/img/blog/eng-blog-prev-1.jpg' alt='article-thumb')
+                        .articles-nav-item__info
+                          .articles-nav-item__title Năm mới – Học ngôn ngữ mới, 8 cách để thực hiện điều đó
+                          .articles-nav-item__user
+                            i.fas.fa-user
+                            span By Isabelle
+                      .articles-nav-item__label Prev Post
+                    li.articles-nav-item
+                      a.articles-nav-item__link(href='blogarticle')
+                        .articles-nav-item__img
+                          img(src='assets/img/blog/eng-blog-1.jpg' alt='article-thumb')
+                        .articles-nav-item__info
+                          .articles-nav-item__title 9 lý do tiếng Anh là ngôn ngữ phổ biến nhất
+                          .articles-nav-item__user
+                            i.fas.fa-user
+                            span By Tom
+                      .articles-nav-item__label Next Post
+      footer.page-footer(style='background-color: #FCF7F7;')
+        .page-footer__top
+          .uk-container
+            .page-footer__logo
+              .logo
+                a.logo__link(href='home')
+                  img.logo__img(src='assets/img/logo.png' alt='logo')
+            .page-footer__contacts
+              .contact-item-box
+                .contact-item-box__title Địa chỉ 
+                .contact-item-box__value
+                  | 38C - 39C, quốc lộ 1A,
+                  br
+                  |  Tân Thới Hiệp, Quận 12, Tp.HCM
+              .contact-item-box
+                .contact-item-box__title Mở cửa
+                .contact-item-box__value
+                  | Thứ 2 - Thứ 7: 10:00 AM – 11:30 PM
+                  br
+                  |  Chủ nhật: 9:00 AM – 4:00 PM
+              .contact-item-box
+                .contact-item-box__title Liên hệ
+                .contact-item-box__value
+                  | Email: 
+                  a(href='mailto:cloudythy@gmail.com') t2e@gmail.com
+                  br
+                  |  Điện thoại:
+                  a(href='tel:0394143031')  0394143031
+        .page-footer__middle
+          .uk-container
             ul.uk-navbar-nav
               li
-                a(href='/home') TRANG CH&#x1EE6;
+                a(href='/') Trang chủ
               li
-                a(href='/catalog') KH&Oacute;A H&#x1ECC;C
+                a(href='catalogs') Khóa học
               li
-                a(href='/branch') CHI NH&Aacute;NH
-          .uk-navbar-center
-            .logo
-              .logo__box
-                a(href='/home')
-                  img.logo__img.logo__img--full(src='assets/img/logo.png' alt='logo')
-          .uk-navbar-right
-            ul.uk-navbar-nav
+                a(href='branch') Chi nhánh
               li
-                a(href='/home#about_us') V&#x1EC0; CH&Uacute;NG T&Ocirc;I
+                a(href='home') Về chúng tôi
               li
-                a(href='/blog') TIN T&#x1EE8;C
+                a(href='blog') Tin tức
               li
-                a(href='/contact') LI&Ecirc;N H&#x1EC6;
-    .page-header__bottom
-      .uk-container
-        .uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
-          .uk-navbar-left
-            div
+                a(href='contacts') Liên hệ
+        .page-footer__bottom
+          .uk-container
+            .page-footer__social
+              ul.social
+                li.social-item
+                  a.social-link(href='#!')
+                    i.fab.fa-twitter
+                li.social-item
+                  a.social-link(href='#!')
+                    i.fab.fa-facebook-f
+                li.social-item
+                  a.social-link(href='#!')
+                    i.fab.fa-linkedin-in
+                li.social-item
+                  a.social-link(href='#!')
+                    i.fab.fa-google-plus-g
+                li.social-item
+                  a.social-link(href='#!')
+                    i.fab.fa-youtube
+            .page-footer__copy
+              span ©2018 t2e
+              a(href='#!') Terms and Conditions
+        #offcanvas(data-uk-offcanvas='overlay: true')
+          .uk-offcanvas-bar
+            button.uk-offcanvas-close(type='button' data-uk-close='')
+            .uk-margin-top
+              ul.uk-nav
+                li
+                  a(href='/') Trang chủ
+                li
+                  a(href='blogarticle') Khóa học
+                li
+                  a(href='branch') Chi nhánh
+                li
+                  a(href='catalog') Về chúng tôi
+                li
+                  a(href='blog') Tin tức
+                li
+                  a(href='contacts') Liên hệ
+            hr.uk-margin
+            ul.uk-nav.uk-nav-parent-icon(data-uk-nav='')
+              li.uk-parent
+                a(href='catalog') Khóa thiếu nhi
+              li.uk-parent
+                a(href='catalog') Khóa thiếu niên
+              li.uk-parent
+                a(href='catalog') Khóa ôn thi
+              li.uk-parent
+                a(href='catalog') Khóa kỹ năng
+            hr.uk-margin
+            .uk-margin-bottom
               .block-with-phone
                 img(src='assets/img/icons/delivery.svg' alt='delivery' data-uk-svg='')
                 div
-                  span Li&ecirc;n h&#x1EC7; ngay v&#x1EDB;i ch&uacute;ng t&ocirc;i
+                  span Liên hệ ngay với chúng tôi
                   a(href='tel:13205448749') 0394143031
-          .uk-navbar-center
-          .uk-navbar-right
-            .other-links
-              ul.other-links-list
-                li
-                  a(href='#modal-full' data-uk-toggle='')
-                    span(data-uk-icon='search')
-                li
-                  a(href='/login')
-                    span(data-uk-icon='user')
-                li
-                  a(href='#')
-                    span(data-uk-icon='cart')
-  main.page-main
-    .section-first-screen
-      .first-screen__bg(style='background-image: url(assets/img/pages/contacts/bg12.jpg)')
-      .first-screen__content
-        .uk-container
-          nav.category-nav
-            nav.uk-navbar-container.uk-navbar-transparent(data-uk-navbar='')
-              ul.uk-navbar-nav
-                li
-                  a(href='/catalog')
-                    .nav-item
-                      span.nav-item__icon
-                        img(src='assets/img/icons/menu/thieunhi.png' alt='face care' data-uk-svg='')
-                      span.nav-item__text Kh&oacute;a thi&#x1EBF;u nhi
-                li
-                  a(href='/catalog')
-                    .nav-item
-                      span.nav-item__icon
-                        img(src='assets/img/icons/menu/thieunien.png' alt='hair care' data-uk-svg='')
-                      span.nav-item__text Kh&oacute;a thi&#x1EBF;u ni&ecirc;n
-                li
-                  a(href='/catalog')
-                    .nav-item
-                      span.nav-item__icon
-                        img(src='assets/img/icons/menu/onthi.png' alt='lips care' data-uk-svg='')
-                      span.nav-item__text Kh&oacute;a &ocirc;n thi
-                li
-                  a(href='/catalog')
-                    .nav-item
-                      span.nav-item__icon
-                        img(src='assets/img/icons/menu/kynang.png' alt='body care' data-uk-svg='')
-                      span.nav-item__text Kh&oacute;a k&#x1EF9; n&abreve;ng
-          .first-screen__box
-            h2.first-screen__title Latest News
-            .first-screen__breadcrumb
-              ul.uk-breadcrumb
-                li
-                  a(href='/') Home
-                li
-                  span News Blog
-                li
-                  span Full post
-    .page-content
-      .uk-margin-large-top.uk-container.uk-container-small
-        article.article-full
-          .article-full__info
-            .article-full__author
-              i.fas.fa-user
-              span By Tom
-            .article-full__category
-              i.fas.fa-folder-open
-              span Posted in Language
-            .article-full__date
-              i.fas.fa-calendar-alt
-              span Nov 30, 2020
-            .article-full__comments
-              i.fas.fa-comment
-              span 20
-          .article-full__image
-            a(href='/page-blog-article.html')
-              img(src='assets/img/blog/eng-blog-next-1.jpg' alt='img-article')
-          .article-full__content
-            h1 5 l&yacute; do ti&#x1EBF;ng Anh &ndash; Anh kh&aacute;c Anh &ndash; M&#x1EF9; du h&#x1ECD;c sinh c&#x1EA7;n bi&#x1EBF;t
+        #callback.uk-flex-top(data-uk-modal='')
+          .uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
+            button.uk-modal-close-default(type='button' data-uk-close='')
             p
-              | Anh v&agrave; M&#x1EF9; c&oacute; th&#x1EC3; chia s&#x1EBB; c&ugrave;ng m&#x1ED9;t ng&ocirc;n ng&#x1EEF; &ndash; ti&#x1EBF;ng Anh, nh&#x1B0;ng ch&#x1EB3;ng c&oacute; m&#x1EA5;y s&#x1EF1; t&#x1B0;&#x1A1;ng &dstrok;&#x1ED3;ng trong c&aacute;ch ph&aacute;t &acirc;m khi m&#x1ED9;t ng&#x1B0;&#x1EDD;i Anh v&agrave; ng&#x1B0;&#x1EDD;i M&#x1EF9; n&oacute;i chuy&#x1EC7;n v&#x1EDB;i nhau c&#x1EA3;. &Dstrok;&uacute;ng v&#x1EAD;y, t&#x1EA5;t c&#x1EA3; m&#x1ECD;i th&#x1EE9; t&#x1EEB; A &dstrok;&#x1EBF;n Z. C&aacute;c t&#x1EEB; &dstrok;&#x1B0;&#x1EE3;c vi&#x1EBF;t gi&#x1ED1;ng nhau
-              | nh&#x1B0;ng nghe l&#x1EA1;i ho&agrave;n to&agrave;n kh&aacute;c nhau khi ph&aacute;t &acirc;m. C&oacute; c&#x1EA3; m&#x1ED9;t &dstrok;&#x1EA1;i d&#x1B0;&#x1A1;ng kh&aacute;c bi&#x1EC7;t v&#x1EC1; ng&ocirc;n ng&#x1EEF; (c&ugrave;ng v&#x1EDB;i m&#x1ED9;t &dstrok;&#x1EA1;i d&#x1B0;&#x1A1;ng &dstrok;&#x1ECB;a l&yacute; th&#x1EF1;c s&#x1EF1;) gi&#x1EEF;a hai qu&#x1ED1;c gia n&oacute;i Ti&#x1EBF;ng Anh l&#x1EDB;n nh&#x1EA5;t th&#x1EBF; gi&#x1EDB;i n&agrave;y. Nh&#x1B0;ng &dstrok;&#x1EEB;ng lo l&#x1EAF;ng! N&#x1EBF;u b&#x1EA1;n &dstrok;ang du
-              | h&#x1ECD;c Anh &#x1EDF; London v&agrave; mu&#x1ED1;n bi&#x1EBF;t &dstrok;i&#x1EC1;u g&igrave; khi&#x1EBF;n gi&#x1ECD;ng c&#x1EE7;a b&#x1EA1;n kh&aacute;c bi&#x1EC7;t so v&#x1EDB;i ng&#x1B0;&#x1EDD;i b&#x1EA1;n c&#x1EE7;a b&#x1EA1;n &dstrok;ang du h&#x1ECD;c M&#x1EF9; t&#x1EA1;i New York, &dstrok;&acirc;y l&agrave; nh&#x1EEF;ng &dstrok;i&#x1EC1;u b&#x1EA1;n c&#x1EA7;n bi&#x1EBF;t.
-            h3 1. Ti&#x1EBF;ng Anh &ndash; M&#x1EF9; th&#x1EF1;c s&#x1EF1; l&acirc;u &dstrok;&#x1EDD;i h&#x1A1;n
-            p
-              | N&#x1EBF;u b&#x1EA1;n &dstrok;ang du h&#x1ECD;c Anh th&igrave; &dstrok;&#x1EEB;ng n&oacute;i v&#x1EDB;i ng&#x1B0;&#x1EDD;i Anh th&#x1EBF; nh&eacute;. V&igrave; ch&iacute;nh Anh &dstrok;&atilde; s&#x1EA3;n sinh ra n&#x1B0;&#x1EDB;c M&#x1EF9; m&agrave; ch&uacute;ng ta bi&#x1EBF;t &dstrok;&#x1EBF;n ng&agrave;y nay. Nh&#x1B0;ng th&#x1EF1;c t&#x1EBF; &dstrok;i&#x1EC1;u n&agrave;y ho&agrave;n to&agrave;n l&agrave; s&#x1EF1; th&#x1EF1;c. Khi nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i Anh &dstrok;&#x1EA7;u ti&ecirc;n gi&#x1B0;&#x1A1;ng bu&#x1ED3;m &dstrok;&#x1EBF;n M&#x1EF9; &dstrok;&#x1ECB;nh
-              | c&#x1B0;, h&#x1ECD; &dstrok;&atilde; mang theo m&#x1ED9;t ng&ocirc;n ng&#x1EEF; ph&#x1ED5; d&#x1EE5;ng. D&#x1EF1;a tr&ecirc;n l&#x1ED1;i n&oacute;i rhotic (khi b&#x1EA1;n ph&aacute;t &acirc;m ch&#x1EEF; r trong m&#x1ED9;t t&#x1EEB;). Trong khi &dstrok;&oacute;, &#x1EDF; c&aacute;c th&agrave;nh ph&#x1ED1; th&#x1ECB;nh v&#x1B0;&#x1EE3;ng ph&iacute;a Nam V&#x1B0;&#x1A1;ng qu&#x1ED1;c Anh, nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i &#x1EDF; t&#x1EA7;ng l&#x1EDB;p cao c&#x1EA5;p lu&ocirc;n mu&#x1ED1;n c&oacute; c&aacute;ch
-              | n&agrave;o &dstrok;&oacute; &dstrok;&#x1EC3; ph&acirc;n bi&#x1EC7;t h&#x1ECD; v&#x1EDB;i nh&#x1EEF;ng th&#x1B0;&#x1EDD;ng d&acirc;n kh&aacute;c. V&igrave; v&#x1EAD;y, h&#x1ECD; b&#x1EAF;t &dstrok;&#x1EA7;u thay &dstrok;&#x1ED5;i l&#x1ED1;i n&oacute;i rhotic th&agrave;nh c&aacute;ch ph&aacute;t &acirc;m r nh&#x1EB9;. N&oacute;i c&aacute;c t&#x1EEB; nh&#x1B0; winter l&agrave; &ldquo;win-tuh&rdquo; thay v&igrave; &ldquo;win-terr&rdquo;. T&#x1EA5;t nhi&ecirc;n, nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i n&agrave;y r&#x1EA5;t sang tr&#x1ECD;ng v&agrave;
-              | m&#x1ECD;i ng&#x1B0;&#x1EDD;i &dstrok;&#x1EC1;u mu&#x1ED1;n b&#x1EAF;t ch&#x1B0;&#x1EDB;c h&#x1ECD;. V&igrave; v&#x1EAD;y c&aacute;ch n&oacute;i m&#x1EDB;i n&agrave;y &ndash; c&aacute;ch m&agrave; ng&#x1B0;&#x1EDD;i Anh hi&#x1EC7;n nay coi l&agrave; C&aacute;ch ph&aacute;t &acirc;m &dstrok;&#x1B0;&#x1EE3;c c&ocirc;ng nh&#x1EAD;n &ndash; &dstrok;&atilde; lan to&#x1EA3; ph&#x1EA7;n c&ograve;n l&#x1EA1;i c&#x1EE7;a mi&#x1EC1;n Nam n&#x1B0;&#x1EDB;c Anh. &Dstrok;i&#x1EC1;u &dstrok;&oacute; c&utilde;ng gi&#x1EA3;i th&iacute;ch t&#x1EA1;i sao nhi&#x1EC1;u n&#x1A1;i b&ecirc;n ngo&agrave;i
-              | mi&#x1EC1;n Nam n&#x1B0;&#x1EDB;c Anh v&#x1EAB;n c&ograve;n s&#x1EED; d&#x1EE5;ng c&aacute;ch n&oacute;i rhotic nh&#x1B0; l&agrave; m&#x1ED9;t ph&#x1EA7;n gi&#x1ECD;ng &dstrok;&#x1ECB;a ph&#x1B0;&#x1A1;ng c&#x1EE7;a h&#x1ECD;. V&#x1EC1; c&#x1A1; b&#x1EA3;n, n&#x1EBF;u b&#x1EA1;n du h&#x1ECD;c Anh v&agrave; n&oacute;i ti&#x1EBF;ng Anh c&#x1EE7;a London, th&igrave; t&#x1EE9;c l&agrave; c&aacute;ch n&oacute;i c&#x1EE7;a b&#x1EA1;n nghe c&oacute; v&#x1EBB; qu&yacute; t&#x1ED9;c h&#x1A1;n &dstrok;&#x1EA5;y. Chi&#x1EBF;n th&#x1EAF;ng.
-            h3 2. Ti&#x1EBF;ng Anh ph&aacute;t &acirc;m nghe gi&#x1ED1;ng ti&#x1EBF;ng Ph&aacute;p h&#x1A1;n
-            p
-              | Ti&#x1EBF;ng Ph&aacute;p &dstrok;&atilde; &#x1EA3;nh h&#x1B0;&#x1EDF;ng &dstrok;&#x1EBF;n ti&#x1EBF;ng Anh nhi&#x1EC1;u h&#x1A1;n nhi&#x1EC1;u so v&#x1EDB;i nh&#x1EEF;ng g&igrave; ng&#x1B0;&#x1EDD;i Anh t&#x1B0;&#x1EDF;ng t&#x1B0;&#x1EE3;ng. (B&#x1EDF;i th&#x1EBF; sinh vi&ecirc;n du h&#x1ECD;c Anh c&utilde;ng b&#x1ECB; &#x1EA3;nh h&#x1B0;&#x1EDF;ng kh&aacute; nhi&#x1EC1;u c&#x1EE7;a ti&#x1EBF;ng Ph&aacute;p &dstrok;&#x1EA5;y nh&eacute;).
-            p
-              | L&#x1EA7;n &dstrok;&#x1EA7;u ti&ecirc;n ti&#x1EBF;ng Ph&aacute;p &#x1EA3;nh h&#x1B0;&#x1EDF;ng &dstrok;&#x1EBF;n ti&#x1EBF;ng Anh l&agrave; khi nh&agrave; vua William x&acirc;m chi&#x1EBF;m n&#x1B0;&#x1EDB;c Anh v&agrave;o th&#x1EBF; k&#x1EF7; 11 (t&igrave;m hi&#x1EC3;u th&ecirc;m v&#x1EC1; l&#x1ECB;ch s&#x1EED; Ti&#x1EBF;ng Anh t&#x1EA1;i &dstrok;&acirc;y). H&#x1ECD; mang theo Ti&#x1EBF;ng Ph&aacute;p Norman v&agrave; bi&#x1EBF;n n&oacute; tr&#x1EDF; th&agrave;nh m&#x1ED9;t ng&ocirc;n ng&#x1EEF; qu&yacute; t&#x1ED9;c
-              | &ndash; &dstrok;&#x1B0;&#x1EE3;c s&#x1EED; d&#x1EE5;ng trong c&aacute;c tr&#x1B0;&#x1EDD;ng h&#x1ECD;c, to&agrave; &aacute;n, &dstrok;&#x1EA1;i h&#x1ECD;c, v&agrave; &#x1EDF; t&#x1EA7;ng l&#x1EDB;p th&#x1B0;&#x1EE3;ng l&#x1B0;u. N&oacute; kh&ocirc;ng t&#x1ED3;n t&#x1EA1;i m&atilde;i. Nh&#x1B0;ng thay v&agrave;o &dstrok;&oacute; ph&aacute;t tri&#x1EC3;n th&agrave;nh Ti&#x1EBF;ng Anh Trung c&#x1ED5;, l&agrave; m&#x1ED9;t s&#x1EF1; pha tr&#x1ED9;n c&#x1EE7;a c&aacute;c &#x1EA3;nh h&#x1B0;&#x1EDF;ng ng&ocirc;n ng&#x1EEF; trong su&#x1ED1;t th&#x1EDD;i
-              | gian &dstrok;&oacute;. L&#x1EA7;n th&#x1EE9; hai l&agrave; trong su&#x1ED1;t nh&#x1EEF;ng n&abreve;m 1700, khi m&agrave; vi&#x1EC7;c s&#x1EED; d&#x1EE5;ng c&aacute;c t&#x1EEB; v&agrave; c&aacute;ch ph&aacute;t &acirc;m phong c&aacute;ch Ph&aacute;p tr&#x1EDF; th&agrave;nh xu h&#x1B0;&#x1EDB;ng s&agrave;nh &dstrok;i&#x1EC7;u &#x1EDF; Anh.
-            p
-              | T&#x1EA5;t nhi&ecirc;n, ng&#x1B0;&#x1EDD;i M&#x1EF9; &dstrok;&atilde; s&#x1ED1;ng cu&#x1ED9;c s&#x1ED1;ng c&#x1EE7;a m&igrave;nh &#x1EDF; b&ecirc;n kia b&#x1EDD; &Dstrok;&#x1EA1;i T&acirc;y D&#x1B0;&#x1A1;ng v&agrave; kh&ocirc;ng tham gia v&agrave;o xu h&#x1B0;&#x1EDB;ng n&agrave;y. &Dstrok;&oacute; l&agrave; l&yacute; do t&#x1EA1;i sao so v&#x1EDB;i ti&#x1EBF;ng Anh M&#x1EF9;, ti&#x1EBF;ng Anh Anh l&#x1EA1;i c&oacute; nhi&#x1EC1;u s&#x1EF1; t&#x1B0;&#x1A1;ng &dstrok;&#x1ED3;ng ng&ocirc;n ng&#x1EEF; v&#x1EDB;i ti&#x1EBF;ng Ph&aacute;p h&#x1A1;n. V&agrave;
-              | &dstrok;i&#x1EC1;u n&agrave;y ph&#x1EA3;i ch&abreve;ng c&utilde;ng l&yacute; gi&#x1EA3;i n&#x1ED7;i &aacute;m &#x1EA3;nh c&#x1EE7;a ng&#x1B0;&#x1EDD;i Anh v&#x1EDB;i b&aacute;nh s&#x1EEB;ng b&ograve;. Ho&#x1EB7;c c&oacute; th&#x1EC3; ch&#x1EC9; v&#x1EDB;i m&igrave;nh t&ocirc;i th&ocirc;i.
-            h3 3. C&aacute;ch vi&#x1EBF;t ki&#x1EC3;u M&#x1EF9; &dstrok;&#x1B0;&#x1EE3;c ph&aacute;t minh nh&#x1B0; m&#x1ED9;t d&#x1EA1;ng ph&#x1EA3;n kh&aacute;ng c&aacute;ch vi&#x1EBF;t ki&#x1EC3;u Anh
-            p
-              | T&#x1EEB; &dstrok;i&#x1EC3;n M&#x1EF9; v&agrave; Anh r&#x1EA5;t kh&aacute;c nhau. B&#x1EDF;i ch&uacute;ng &dstrok;&#x1B0;&#x1EE3;c bi&ecirc;n so&#x1EA1;n b&#x1EDF;i hai t&aacute;c gi&#x1EA3; r&#x1EA5;t kh&aacute;c nhau v&#x1EDB;i hai quan &dstrok;i&#x1EC3;m kh&ocirc;ng &dstrok;&#x1ED3;ng nh&#x1EA5;t v&#x1EC1; ng&ocirc;n ng&#x1EEF;. T&#x1EEB; &dstrok;i&#x1EC3;n c&#x1EE7;a Anh &dstrok;&#x1B0;&#x1EE3;c bi&ecirc;n so&#x1EA1;n b&#x1EDF;i c&aacute;c h&#x1ECD;c gi&#x1EA3; t&#x1EEB; London. (V&igrave; m&#x1ED9;t v&agrave;i l&yacute; do kh&ocirc;ng ph&#x1EA3;i l&agrave;
-              | Oxford). Nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i n&agrave;y ch&#x1EC9; mu&#x1ED1;n thu th&#x1EAD;p t&#x1EA5;t c&#x1EA3; c&aacute;c t&#x1EEB; Ti&#x1EBF;ng Anh ph&#x1ED5; bi&#x1EBF;n. Trong khi &dstrok;&oacute;, t&#x1EEB; &dstrok;i&#x1EC3;n c&#x1EE7;a M&#x1EF9; l&#x1EA1;i &dstrok;&#x1B0;&#x1EE3;c th&#x1EF1;c hi&#x1EC7;n b&#x1EDF;i m&#x1ED9;t ng&#x1B0;&#x1EDD;i bi&ecirc;n so&#x1EA1;n t&#x1EEB; &dstrok;i&#x1EC3;n c&oacute; t&ecirc;n l&agrave; Noah Webster. Webster mu&#x1ED1;n c&aacute;ch vi&#x1EBF;t c&#x1EE7;a M&#x1EF9; kh&ocirc;ng ch&#x1EC9;
-              | &dstrok;&#x1A1;n gi&#x1EA3;n h&#x1A1;n m&agrave; c&ograve;n ph&#x1EA3;i kh&aacute;c bi&#x1EC7;t v&#x1EDB;i c&aacute;ch vi&#x1EBF;t c&#x1EE7;a ng&#x1B0;&#x1EDD;i Anh. C&utilde;ng nh&#x1B0; c&aacute;i c&aacute;ch m&agrave; ng&#x1B0;&#x1EDD;i M&#x1EF9; th&#x1EC3; hi&#x1EC7;n s&#x1EF1; &dstrok;&#x1ED9;c l&#x1EAD;p t&#x1EEB; lu&#x1EAD;t l&#x1EC7; c&#x1EE7;a Anh tr&#x1B0;&#x1EDB;c &dstrok;&acirc;y. &Ocirc;ng &dstrok;&atilde; b&#x1ECF; ch&#x1EEF; u trong c&aacute;c t&#x1EEB; nh&#x1B0; colour v&agrave; honour &ndash; c&aacute;ch vi&#x1EBF;t &dstrok;&#x1B0;&#x1EE3;c ph&aacute;t tri&#x1EC3;n
-              | t&#x1EEB; &#x1EA3;nh h&#x1B0;&#x1EDF;ng c&#x1EE7;a Ph&aacute;p l&ecirc;n n&#x1B0;&#x1EDB;c Anh. &Dstrok;&#x1EC3; bi&#x1EBF;n ch&uacute;ng th&agrave;nh color v&agrave; honor. &Ocirc;ng c&utilde;ng l&agrave;m t&#x1B0;&#x1A1;ng t&#x1EF1; v&#x1EDB;i c&aacute;c t&#x1EEB; k&#x1EBF;t th&uacute;c b&#x1EB1;ng &ndash;ise v&agrave; bi&#x1EBF;n ch&uacute;ng th&agrave;nh &ndash;ize. B&#x1EDF;i v&igrave; &ocirc;ng cho r&#x1EB1;ng c&aacute;ch vi&#x1EBF;t Anh M&#x1EF9; n&ecirc;n ph&#x1EA3;n &aacute;nh &dstrok;&uacute;ng c&aacute;i c&aacute;ch m&agrave; ng&#x1B0;&#x1EDD;i
-              | M&#x1EF9; ph&aacute;t &acirc;m t&#x1EEB; &dstrok;&oacute;. Th&ecirc;m v&agrave;o &dstrok;&oacute;, z l&agrave; ch&#x1EEF; c&aacute;i th&uacute; v&#x1ECB; h&#x1A1;n khi vi&#x1EBF;t. V&#x1EAD;y &dstrok;&#x1EA5;y.
-            p
-              | V&#x1EAD;y n&ecirc;n nh&#x1EEF;ng b&#x1EA1;n sinh vi&ecirc;n du h&#x1ECD;c Anh v&agrave; du h&#x1ECD;c M&#x1EF9; c&utilde;ng s&#x1EED; d&#x1EE5;ng nh&#x1EEF;ng t&agrave;i li&#x1EC7;u ng&ocirc;n ng&#x1EEF; nh&#x1B0; t&#x1EEB; &dstrok;i&#x1EC3;n hay gi&aacute;o tr&igrave;nh c&utilde;ng s&#x1EBD; c&oacute; c&aacute;ch vi&#x1EBF;t v&ocirc; c&ugrave;ng kh&aacute;c nhau. V&agrave; &dstrok;&#x1B0;&#x1A1;ng nhi&ecirc;n c&aacute;ch n&oacute;i hay s&#x1EED; d&#x1EE5;ng ti&#x1EBF;ng Anh h&agrave;ng ng&agrave;y c&#x1EE7;a h&#x1ECD; c&utilde;ng
-              | kh&aacute;c bi&#x1EC7;t r&#x1EA5;t l&#x1EDB;n.
-            h3 4. Ng&#x1B0;&#x1EDD;i M&#x1EF9; th&iacute;ch b&#x1ECF; ho&agrave;n to&agrave;n c&aacute;c t&#x1EEB;. (Sinh vi&ecirc;n du h&#x1ECD;c M&#x1EF9; c&utilde;ng v&#x1EAD;y)
-            p
-              | &Dstrok;&ocirc;i khi c&utilde;ng c&oacute; nh&#x1EEF;ng s&#x1EF1; kh&aacute;c bi&#x1EC7;t trong ti&#x1EBF;ng Anh M&#x1EF9; khi&#x1EBF;n ng&#x1B0;&#x1EDD;i Anh kh&ocirc;ng th&#x1EC3; hi&#x1EC3;u n&#x1ED5;i. Nh&#x1B0; khi ng&#x1B0;&#x1EDD;i M&#x1EF9; b&#x1ECF; to&agrave;n b&#x1ED9; c&aacute;c &dstrok;&#x1ED9;ng t&#x1EEB; trong m&#x1ED9;t c&acirc;u. Sinh vi&ecirc;n du h&#x1ECD;c M&#x1EF9; c&utilde;ng th&#x1B0;&#x1EDD;ng c&oacute; th&oacute;i quen nh&#x1B0; v&#x1EAD;y. Khi n&oacute;i v&#x1EDB;i ai &dstrok;&oacute; r&#x1EB1;ng h&#x1ECD;
-              | s&#x1EBD; vi&#x1EBF;t th&#x1B0; cho h&#x1ECD;. H&#x1ECD; s&#x1EBD; n&oacute;i l&agrave; &ldquo;I&rsquo;ll write them&rdquo;. Khi b&#x1EA1;n h&#x1ECF;i m&#x1ED9;t ng&#x1B0;&#x1EDD;i M&#x1EF9; l&agrave; li&#x1EC7;u r&#x1EB1;ng h&#x1ECD; c&oacute; mu&#x1ED1;n &dstrok;i mua s&#x1EAF;m hay kh&ocirc;ng. H&#x1ECD; c&oacute; th&#x1EC3; s&#x1EBD; ch&#x1EC9; n&oacute;i &ldquo;I could&rdquo;. &#x1EDE; Anh, c&aacute;ch tr&#x1EA3; l&#x1EDD;i ki&#x1EC3;u n&agrave;y nghe th&#x1EF1;c s&#x1EF1; k&#x1EF3; qu&#x1EB7;c, v&igrave; h&#x1ECD; s&#x1EBD; n&oacute;i
-              | &ldquo;I&rsquo;ll write to you&rdquo; v&agrave; &ldquo;I could go&rdquo;. B&#x1ECF; &dstrok;&#x1ED9;ng t&#x1EEB; c&oacute; l&#x1EBD; b&#x1EDF;i v&igrave; ng&#x1B0;&#x1EDD;i M&#x1EF9; mu&#x1ED1;n n&oacute;i nhanh h&#x1A1;n. Ho&#x1EB7;c c&oacute; th&#x1EC3; v&igrave; ng&#x1B0;&#x1EDD;i Anh ch&#x1EC9; th&iacute;ch vi&#x1EBF;t ch&iacute;nh x&aacute;c nh&#x1EEF;ng g&igrave; h&#x1ECD; n&oacute;i. Kh&ocirc;ng ai &dstrok;&uacute;ng hay sai &#x1EDF; &dstrok;&acirc;y c&#x1EA3;. V&#x1EAD;y n&ecirc;n &dstrok;&#x1EEB;ng cho r&#x1EB1;ng c&aacute;c b&#x1EA1;n
-              | sinh vi&ecirc;n du h&#x1ECD;c M&#x1EF9; &dstrok;&atilde; h&#x1ECD;c m&#x1ED9;t c&aacute;ch n&oacute;i kh&ocirc;ng &dstrok;&uacute;ng nh&eacute;.
-            h3 5. Hai th&#x1EE9; ti&#x1EBF;ng Anh n&agrave;y &dstrok;&#x1B0;&#x1EE3;c vay m&#x1B0;&#x1EE3;n t&#x1EEB; nhi&#x1EC1;u ng&ocirc;n ng&#x1EEF; kh&aacute;c nhau
-            p
-              | R&otilde; r&agrave;ng l&agrave; ti&#x1EBF;ng Anh Anh v&agrave; Anh M&#x1EF9; &dstrok;&atilde; ph&aacute;t tri&#x1EC3;n theo 2 h&#x1B0;&#x1EDB;ng kh&aacute;c nhau khi b&#x1EA1;n xem x&eacute;t c&aacute;c &#x1EA3;nh h&#x1B0;&#x1EDF;ng v&abreve;n ho&aacute; &dstrok;&atilde; t&aacute;c &dstrok;&#x1ED9;ng bi&#x1EC7;t l&#x1EAD;p t&#x1EDB;i m&#x1ED7;i ki&#x1EC3;u Ti&#x1EBF;ng Anh &dstrok;&oacute;. C&utilde;ng nh&#x1B0; vi&#x1EC7;c l&agrave;m th&#x1EBF; n&agrave;o h&#x1ECD; &dstrok;&atilde; m&#x1B0;&#x1EE3;n t&#x1EEB; c&#x1EE7;a c&aacute;c ng&ocirc;n ng&#x1EEF; &dstrok;&oacute;. V&igrave; v&agrave;i
-              | l&yacute; do, &dstrok;i&#x1EC1;u n&agrave;y l&#x1EA1;i r&#x1EA5;t ph&#x1ED5; bi&#x1EBF;n &dstrok;&#x1ED1;i v&#x1EDB;i c&aacute;c t&#x1EEB; n&oacute;i v&#x1EC1; th&#x1EF1;c ph&#x1EA9;m. Ch&#x1EB3;ng h&#x1EA1;n t&#x1EEB; coriander (Anh Anh, m&#x1B0;&#x1EE3;n t&#x1EEB; Ti&#x1EBF;ng Ph&aacute;p). V&agrave; cilantro (Anh M&#x1EF9;, m&#x1B0;&#x1EE3;n t&#x1EEB; Ti&#x1EBF;ng T&acirc;y Ban Nha) &dstrok;&#x1EC1;u c&oacute; ngh&itilde;a l&agrave; rau m&ugrave;i. V&agrave; aubergine (Anh Anh, m&#x1B0;&#x1EE3;n
-              | t&#x1EEB; Ti&#x1EBF;ng &#x1EA2; R&#x1EAD;p). V&agrave; eggplant (Anh M&#x1EF9;, g&#x1ECD;i nh&#x1B0; v&#x1EAD;y l&agrave; v&igrave; n&oacute; tr&ocirc;ng gi&#x1ED1;ng m&#x1ED9;t qu&#x1EA3; tr&#x1EE9;ng m&agrave;u t&iacute;m) &dstrok;&#x1EC1;u c&oacute; ngh&itilde;a l&agrave; c&agrave; t&iacute;m. C&ograve;n r&#x1EA5;t nhi&#x1EC1;u v&iacute; d&#x1EE5; kh&aacute;c. Nh&#x1B0;ng th&ocirc;i, &dstrok;i&#x1EC1;u quan tr&#x1ECD;ng l&agrave; s&#x1EED; d&#x1EE5;ng &dstrok;&uacute;ng t&#x1EEB; &#x1EDF; &dstrok;&uacute;ng qu&#x1ED1;c gia m&agrave; b&#x1EA1;n &dstrok;ang
-              | du h&#x1ECD;c. Sau c&ugrave;ng, b&#x1EA1;n kh&ocirc;ng mu&#x1ED1;n h&#x1ECF;i xin ng&#x1B0;&#x1EDD;i Anh v&agrave;i l&aacute; nh&ocirc;m (aluminium foil) v&agrave; l&#x1EA1;i ph&aacute;t &acirc;m l&agrave; aloo-minnum. C&utilde;ng nh&#x1B0; kh&ocirc;ng mu&#x1ED1;n vi&#x1EBF;t cho ng&#x1B0;&#x1EDD;i M&#x1EF9; l&agrave; &ldquo;This is my favourite colour!&rdquo; ph&#x1EA3;i kh&ocirc;ng?
-            .article-full__bottom
-              .article-full__tags
-                div
-                  i.fas.fa-tags
-                  strong Related Tags
-                span H&#x1ECC;C TI&#x1EBE;NG ANH, ANH, US
-              .article-full__share
-                div
-                  strong Share This
-                  i.fas.fa-share-alt
-                ul
-                  li
-                    a(href='#!')
-                      i.fab.fa-twitter
-                  li
-                    a(href='#!')
-                      i.fab.fa-facebook-f
-                  li
-                    a(href='#!')
-                      i.fab.fa-google-plus-g
-                  li
-                    a(href='#!')
-                      i.fab.fa-pinterest-p
-            .article-full__nav
-              ul.articles-nav-list
-                li.articles-nav-item
-                  a.articles-nav-item__link(href='blogprev')
-                    .articles-nav-item__img
-                      img(src='assets/img/blog/eng-blog-prev-1.jpg' alt='article-thumb')
-                    .articles-nav-item__info
-                      .articles-nav-item__title N&abreve;m m&#x1EDB;i &ndash; H&#x1ECD;c ng&ocirc;n ng&#x1EEF; m&#x1EDB;i, 8 c&aacute;ch &dstrok;&#x1EC3; th&#x1EF1;c hi&#x1EC7;n &dstrok;i&#x1EC1;u &dstrok;&oacute;
-                      .articles-nav-item__user
-                        i.fas.fa-user
-                        span By Isabelle
-                  .articles-nav-item__label Prev Post
-                li.articles-nav-item
-                  a.articles-nav-item__link(href='page-blog-article.html')
-                    .articles-nav-item__img
-                      img(src='assets/img/blog/eng-blog-1.jpg' alt='article-thumb')
-                    .articles-nav-item__info
-                      .articles-nav-item__title 9 l&yacute; do ti&#x1EBF;ng Anh l&agrave; ng&ocirc;n ng&#x1EEF; ph&#x1ED5; bi&#x1EBF;n nh&#x1EA5;t
-                      .articles-nav-item__user
-                        i.fas.fa-user
-                        span By Tom
-                  .articles-nav-item__label Next Post
-  footer.page-footer(style='background-color: #FCF7F7;')
-    .page-footer__top
-      .uk-container
-        .page-footer__logo
-          .logo
-            a.logo__link(href='/home')
-              img.logo__img(src='assets/img/logo.png' alt='logo')
-        .page-footer__contacts
-          .contact-item-box
-            .contact-item-box__title &Dstrok;&#x1ECB;a ch&#x1EC9; 
-            .contact-item-box__value
-              | 38C - 39C, qu&#x1ED1;c l&#x1ED9; 1A,
-              br
-              |  T&acirc;n Th&#x1EDB;i Hi&#x1EC7;p, Qu&#x1EAD;n 12, Tp.HCM
-          .contact-item-box
-            .contact-item-box__title M&#x1EDF; c&#x1EED;a
-            .contact-item-box__value
-              | Th&#x1EE9; 2 - Th&#x1EE9; 7: 10:00 AM &ndash; 11:30 PM
-              br
-              |  Ch&#x1EE7; nh&#x1EAD;t: 9:00 AM &ndash; 4:00 PM
-          .contact-item-box
-            .contact-item-box__title Li&ecirc;n h&#x1EC7;
-            .contact-item-box__value
-              | Email: 
-              a(href='mailto:cloudythy@gmail.com') t2e@gmail.com
-              br
-              |  &Dstrok;i&#x1EC7;n tho&#x1EA1;i:
-              a(href='tel:0394143031')  0394143031
-    .page-footer__middle
-      .uk-container
-        ul.uk-navbar-nav
-          li
-            a(href='/home') Trang ch&#x1EE7;
-          li
-            a(href='/catalogs') Kh&oacute;a h&#x1ECD;c
-          li
-            a(href='/branch') Chi nh&aacute;nh
-          li
-            a(href='/home#about_us') V&#x1EC1; ch&uacute;ng t&ocirc;i
-          li
-            a(href='/blog') Tin t&#x1EE9;c
-          li
-            a(href='/contact') Li&ecirc;n h&#x1EC7;
-    .page-footer__bottom
-      .uk-container
-        .page-footer__social
-          ul.social
-            li.social-item
-              a.social-link(href='#!')
-                i.fab.fa-twitter
-            li.social-item
-              a.social-link(href='#!')
-                i.fab.fa-facebook-f
-            li.social-item
-              a.social-link(href='#!')
-                i.fab.fa-linkedin-in
-            li.social-item
-              a.social-link(href='#!')
-                i.fab.fa-google-plus-g
-            li.social-item
-              a.social-link(href='#!')
-                i.fab.fa-youtube
-        .page-footer__copy
-          span &copy;2018 t2e
-          a(href='#!') Terms and Conditions
-    #offcanvas(data-uk-offcanvas='overlay: true')
-      .uk-offcanvas-bar
-        button.uk-offcanvas-close(type='button' data-uk-close='')
-        .uk-margin-top
-          ul.uk-nav
-            li
-              a(href='/') Trang ch&#x1EE7;
-            li
-              a(href='page-blog-article.html') Kh&oacute;a h&#x1ECD;c
-            li
-              a(href='/branch') Chi nh&aacute;nh
-            li
-              a(href='/catalog') V&#x1EC1; ch&uacute;ng t&ocirc;i
-            li
-              a(href='/blog') Tin t&#x1EE9;c
-            li
-              a(href='/contact') Li&ecirc;n h&#x1EC7;
-        hr.uk-margin
-        ul.uk-nav.uk-nav-parent-icon(data-uk-nav='')
-          li.uk-parent
-            a(href='/catalog') Kh&oacute;a thi&#x1EBF;u nhi
-          li.uk-parent
-            a(href='/catalog') Kh&oacute;a thi&#x1EBF;u ni&ecirc;n
-          li.uk-parent
-            a(href='/catalog') Kh&oacute;a &ocirc;n thi
-          li.uk-parent
-            a(href='/catalog') Kh&oacute;a k&#x1EF9; n&abreve;ng
-        hr.uk-margin
-        .uk-margin-bottom
-          .block-with-phone
-            img(src='assets/img/icons/delivery.svg' alt='delivery' data-uk-svg='')
-            div
-              span Li&ecirc;n h&#x1EC7; ngay v&#x1EDB;i ch&uacute;ng t&ocirc;i
-              a(href='tel:13205448749') 0394143031
-    #callback.uk-flex-top(data-uk-modal='')
-      .uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
-        button.uk-modal-close-default(type='button' data-uk-close='')
-        p
-    #modal-full.uk-modal-full.uk-modal(data-uk-modal='')
-      .uk-modal-dialog.uk-flex.uk-flex-center.uk-flex-middle(data-uk-height-viewport='')
-        button.uk-modal-close-full(type='button' data-uk-close='')
-        form.uk-search.uk-search-large
-          input.uk-search-input.uk-text-center(type='search' placeholder='Search...' autofocus='')
-script(src='assets/js/jquery.min.js')
-script(src='assets/js/uikit.min.js')
-script(src='assets/js/uikit-icons.min.js')
-script(src='assets/js/main.js')
-script(src='assets/js/fontawesome.all.min.js')
+        #modal-full.uk-modal-full.uk-modal(data-uk-modal='')
+          .uk-modal-dialog.uk-flex.uk-flex-center.uk-flex-middle(data-uk-height-viewport='')
+            button.uk-modal-close-full(type='button' data-uk-close='')
+            form.uk-search.uk-search-large
+              input.uk-search-input.uk-text-center(type='search' placeholder='Search...' autofocus='')
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/uikit.min.js')
+    script(src='assets/js/uikit-icons.min.js')
+    script(src='assets/js/main.js')
+    script(src='assets/js/fontawesome.all.min.js')

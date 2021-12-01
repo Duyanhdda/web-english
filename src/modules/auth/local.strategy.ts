@@ -37,8 +37,8 @@ export class LocalStrategy extends PassportStrategy(Strategy) {
         throw new UnauthorizedException('Sai tài khoản hoặc mật khẩu');
         return {
         //Return 1 cái json
-        email: user1.username,
-      };
+        email: user1.username, 
+      };  
     }
   }
 }
