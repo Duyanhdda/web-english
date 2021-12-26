@@ -18,7 +18,7 @@ export class hocvienService {
     }
 
     async getByEmail( email: string): Promise<Hocvien> {
-        return await this.hocvienRepository.findOne({Email: email});
+        return await this.hocvienRepository.findOne({Email: email}); 
     }
 
     async getById(id: string): Promise<Hocvien> {

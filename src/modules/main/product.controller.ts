@@ -1,7 +1,6 @@
 import { Response, Request } from 'express';
 import { Controller, Get, Render, Post, Body, Res, UseGuards, Req } from "@nestjs/common";
 import { AuthGuard } from '@nestjs/passport'; 
-<<<<<<< HEAD
 import { FunctionService } from 'src/services/function.service';
 @Controller("product")
 export class ProductController {
@@ -27,13 +26,5 @@ export class ProductController {
         }
         return viewBag;
 
-=======
-@Controller("product")
-export class ProductController {
-
-    @Get()  
-    @Render("home/product")
-    async index(@Req() req: Request, @Res() res: Response) {
->>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303
     }
 }

@@ -84,7 +84,6 @@ export class FunctionService {
         return await this.functionRepository.query(
             "SELECT chuyenlophoc('"+MaHV +"','"+ MaLH + "','"+ Malophientai +"') as Result");
     }
-<<<<<<< HEAD
 
     // Xem danh sách toàn bộ lớp học
     async xemdanhsacLH() {
@@ -166,8 +165,6 @@ export class FunctionService {
         return await this.functionRepository.query(
             "UPDATE `khoahoc` SET `up`=false WHERE khoahoc.MaKH='"+ MaKH + "'");
     }
-=======
->>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303
     // async getOne(id: string , email: string ): Promise<Hocvien> {
     //     return await this.hocvienRepository.findOne(Number(id)); //Phải convert id sang number vì id của faculty là NUMBER chứ không phải là string
     // }

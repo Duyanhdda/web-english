@@ -50,7 +50,6 @@ $(".btn-search").click(function (e) {
     $('#Addsudung').modal('show');
 });
 
-<<<<<<< HEAD
 $('.btn-search2').click(function (e) {
     var ma = $(this).data("makh");
     $("#giaotrinh input[name='MaKH']").val(ma);
@@ -79,5 +78,3 @@ $('.btn-search2').click(function (e) {
     $('#giaotrinh').modal('show');
   });
 
-=======
->>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303

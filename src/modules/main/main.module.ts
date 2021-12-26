@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { DslophocController } from './giangvien_trogiang/dslophoc_info.controller';
 import { GiangvienmainController } from './giangvien_trogiang/maingv.controller';
-=======
->>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303
 import { BlognextController } from './blognext.controller';
 import { Khoahoc } from './../../models/khoahoc/khoahoc.entity';
 
@@ -19,7 +16,7 @@ import { CourselistController } from "./courselist.controller";
 import { FunctionService } from "src/services/function.service";
 import { CapnhatkhController } from "./quanlygiaoduc/capnhatkh.controller";
 import { QlgdmainController } from "./quanlygiaoduc/qlgdmain.controller";
-import { KhoahocService } from "src/services/khoahoc.service";
+import { KhoahocService } from "src/services/khoahoc.service"; 
 import { CapnhatgtController } from './quanlygiaoduc/capnhatgt.controller';
 import { HocviencourselistController } from './hocvien/courselist.controller';
 import { DangkylhController } from './hocvien/dangkylh.controller';
@@ -30,7 +27,6 @@ import { BlogController } from './blog.controller';
 import { ContactController } from './contact.controller';
 import { BlogprevController } from './blogprev.controller';
 import { BlogarticleController } from './blogarticle.controller';
-<<<<<<< HEAD
 import { CapnhatlhController } from './quanlygiaoduc/capnhatlh.controller';
 import { GiangviendskhController } from './giangvien_trogiang/gv_courselist.controller';
 import { Userservice } from 'src/services/user.service';
@@ -48,16 +44,6 @@ import { ChinhanhController } from './hocvien/chinhanh.controller';
     DangkylhController,ProductController,BranchController,BlogController,ContactController,BlognextController,BlogprevController,
     BlogarticleController,CapnhatlhController,GiangvienmainController,GiangviendskhController,DslophocController,DshocvienController,ThoikhoabieuController,
     ChinhanhController]
-=======
-
-@Module({
-    imports: [TypeOrmModule.forFeature([Hocvien,Khoahoc])],
-    providers: [hocvienService,FunctionService,KhoahocService],
-    controllers: [MainController,UpdateinfoController,RegisterController,CourselistController,
-    CapnhatkhController,QlgdmainController,CapnhatgtController,HocviencourselistController,CatalogController,
-    DangkylhController,ProductController,BranchController,BlogController,ContactController,BlognextController,BlogprevController,
-    BlogarticleController]
->>>>>>> 1570bda235ae0b8e6e158bfc2254b25c6a4b5303
 })
   
 export class MainModule { }
