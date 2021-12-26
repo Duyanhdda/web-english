@@ -21,7 +21,6 @@ async function bootstrap() {
     })
   );
   app.use(flash());
-  app.enableCors();
   moment.locale('vi');
   app.setLocal("moment", moment);
   await app.listen(process.env.PORT || 3000);
